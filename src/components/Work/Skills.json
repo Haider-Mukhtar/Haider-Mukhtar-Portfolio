@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "./workAssets/html.svg",
+    "title": "HTML 5"
+  },
+  {
+    "id": 2,
+    "image": "./workAssets/css.svg",
+    "title": "CSS 3"
+  },
+  {
+    "id": 3,
+    "image": "./workAssets/bootstrap.svg",
+    "title": "Bootstap"
+  },
+  {
+    "id": 4,
+    "image": "./workAssets/tailwind.svg",
+    "title": "Tailwind CSS"
+  },
+  {
+    "id": 5,
+    "image": "./workAssets/sass.svg",
+    "title": "SASS"
+  },
+  {
+    "id": 6,
+    "image": "./workAssets/js.svg",
+    "title": "JavaScript"
+  },
+  {
+    "id": 7,
+    "image": "./workAssets/react.svg",
+    "title": "React JS"
+  },
+  {
+    "id": 8,
+    "image": "./workAssets/react.svg",
+    "title": "React Native"
+  }
+]
