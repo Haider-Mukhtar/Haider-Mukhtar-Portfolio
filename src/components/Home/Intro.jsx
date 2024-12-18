@@ -5,6 +5,7 @@ import linkedin from './homeAssets/linkedin.svg'
 import github from './homeAssets/github.svg'
 import instagram from './homeAssets/instagram.svg'
 import { TypeAnimation } from 'react-type-animation'
+import { Link } from 'react-router'
 
 function Intro() {
     return (
@@ -34,14 +35,14 @@ function Intro() {
                             />
                         </div>
                         <div className='flex mt-4'>
-                            <a href='#' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 lg:px-10 md:px-8 sm:py-4 py-3 px-3 rounded-full hover:transition-transform hover:scale-105 
+                            <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 lg:px-10 md:px-8 sm:py-4 py-3 px-3 rounded-full hover:transition-transform hover:scale-105 
                             motion-scale-in-[0.5] motion-translate-x-in-[-120%] motion-translate-y-in-[-60%] motion-opacity-in-[33%] motion-rotate-in-[-1080deg] motion-blur-in-[10px] motion-delay-[0.38s]/scale motion-duration-[0.38s]/opacity motion-duration-[1.20s]/rotate motion-duration-[0.15s]/blur motion-delay-[0.60s]/blur motion-ease-spring-bouncier
                             '>
                                 <div className='text-xl font-bold text-white mr-2'>
                                     HIRE ME NOW
                                 </div>
                                 <img className='sm:w-10 sm:h-8 h-6 w-8' src={rightArrow} />
-                            </a>
+                            </Link>
                         </div>
                         <div className='flex flex-row gap-6 mt-10'>
                             <a
