@@ -6,6 +6,8 @@ import Experience from '../About/Experience'
 import GetInTouch from '../Contact/GetInTouch'
 import YearOfExperience from '../About/YearOfExperience'
 import Testimonials from '../Work/Testimonials'
+import Projects from '../Projects/Projects'
+import Objective from '../About/Objective'
 
 function Home() {
     return (
@@ -17,6 +19,8 @@ function Home() {
             <Education />
             <YearOfExperience />
             <Experience />
+            <Objective />
+            <Projects />
             <Testimonials />
             <GetInTouch />
         </div>

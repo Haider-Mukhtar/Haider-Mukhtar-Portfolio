@@ -94,8 +94,11 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center pb-2 text-white text-md">
+            <div className="text-center text-white text-md">
                 @2024-2025 HaiderMukhtar. All rights reserved.
+            </div>
+            <div className="text-center pb-2 text-white text-md">
+                Supportive Partner ❤️ Haider Mukhtar
             </div>
         </div>
     );

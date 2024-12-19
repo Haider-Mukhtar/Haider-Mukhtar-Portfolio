@@ -12,10 +12,10 @@ const testimonials = [
     {
         "id": 1,
         "profileImage": profilePic,
-        "name": "Haider Mukhtar",
-        "organization": "DigiMark Developers",
-        "position": "CEO",
-        "commit": "loreAliqua in consequat aute laborum sunt. Sint ullamco laboris ut ut elit proident ut. Laboris aliquip adipisicing sit excepteur reprehenderit et ad adipisicing ex consequat cupidatat amet. Non consectetur veniam irure sit commodo voluptate. Ad consectetur cupidatat ut non. Aliquip magna elit reprehenderit irure nulla consectetur ullamco nulla sint eu laboris. Consequat duis mollit magna ex veniam aute."
+        "name": "Muaaz Ahmad",
+        "organization": "MikroStar Tech",
+        "position": "Mobile App Developer",
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise , efficiency and creativity to every project."
     },
     {
         "id": 2,
