@@ -61,7 +61,7 @@ function Skills() {
     //     })
     // }
     return (
-        <div className='flex justify-center xl:mt-8'>
+        <div className='flex justify-center mt-8'>
             <div className='w-4/5 2xl:px-8'>
                 <div className='text-5xl sm:text-5xl font-semibold font-serif text-center'>
                     My Works Skills
