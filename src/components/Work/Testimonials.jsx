@@ -15,7 +15,7 @@ const testimonials = [
         "name": "Muaaz Ahmad",
         "organization": "MikroStar Tech",
         "position": "Mobile App Developer",
-        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise , efficiency and creativity to every project."
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
         "id": 2,

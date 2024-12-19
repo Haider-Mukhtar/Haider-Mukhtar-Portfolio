@@ -1,9 +1,19 @@
 import React, { useState } from 'react'
 import myPic from './navAssets/pic.png'
 import menuIcon from './navAssets/menuIcon.svg'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router';
+
 
 function Navbar() {
+
+    const location = useLocation(); // Get the current location
+
+    const links = [
+        { name: 'Home', path: '/' },
+        { name: 'About Me', path: '/about' },
+        { name: 'My Works', path: '/myworks' },
+        { name: 'Contact', path: '/contact' },
+    ];
 
     const [showDropdown, setShowDropdown] = useState(false)
 
@@ -19,26 +29,20 @@ function Navbar() {
                         <img className='h-14' src={myPic} alt='Profile Pic' />
                     </Link>
                     <ul className='sm:flex gap-10 hidden'>
-                        <li>
-                            <Link to='/' className='hover:text-blue-700 hover:underline hover:underline-offset-2 '>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/about' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                About Me
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/myworks' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                My Works
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/contact' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                Contact
-                            </Link>
-                        </li>
+                        {links.map((link) => (
+                            <li>
+                                <Link
+                                    to={link.path}
+                                    className={
+                                        `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} 
+                                        ${location.pathname === link.path ? 'underline underline-offset-2' : 'no-underline'
+                                        }
+                                        hover:text-blue-700 hover:underline hover:underline-offset-2`}
+                                >
+                                    {link.name}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className='sm:hidden block mt-auto'>
                         <button className='px-1' onClick={handelDropdown}>
@@ -48,34 +52,28 @@ function Navbar() {
                 </div>
             </div>
             {
-                showDropdown ? 
-                <div className='flex justify-center py-6'>
-                    <div className='bg-white w-4/5'>   
-                        <ul className='flex flex-col justify-center items-center gap-6'>
-                            <li>
-                                <Link to='/' className='hover:text-blue-700 hover:underline hover:underline-offset-2 '>
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/about' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                    About Me
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/myworks' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                    My Works
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/contact' className='hover:text-blue-700 hover:underline hover:underline-offset-2'>
-                                    Contact
-                                </Link>
-                            </li>
-                        </ul>
+                showDropdown ?
+                    <div className='flex justify-center py-6'>
+                        <div className='bg-white w-4/5'>
+                            <ul className='flex flex-col justify-center items-center gap-6'>
+                                {links.map((link) => (
+                                    <li>
+                                        <Link
+                                            to={link.path}
+                                            className={
+                                                `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} 
+                                            ${location.pathname === link.path ? 'underline underline-offset-2' : 'no-underline'
+                                                }
+                                            hover:text-blue-700 hover:underline hover:underline-offset-2`}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                : null
+                    : null
             }
         </>
     )
