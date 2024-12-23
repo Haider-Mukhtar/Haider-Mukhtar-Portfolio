@@ -41,7 +41,7 @@ const experience = [
 
 function Experience() {
     return (
-        <div className='flex justify-center xl:mt-8 py-10'>
+        <div className='flex justify-center xl:mt-8'>
             <div className='w-4/5 xl:px-14 lg:px-8'>
                 <div className='text-5xl sm:text-5xl font-semibold font-serif text-center'>
                     Work Experience
@@ -49,7 +49,7 @@ function Experience() {
                 {
                     experience.map((item) =>
                         <div className='my-8 sm:grid sm:grid-cols-2'>
-                            <div className=''>
+                            <div className='motion-preset-slide-right motion-duration-2000'>
                                 <div className='text-2xl font-bold text-center sm:text-left font-serif'>
                                     {item.title}
                                 </div>
@@ -60,7 +60,7 @@ function Experience() {
                                     {item.sTime} - {item.eTime}
                                 </div>
                             </div>
-                            <div className=''>
+                            <div className='motion-preset-slide-left motion-duration-2000'>
                                 <div className='text-2xl font-semibold text-center sm:text-left'>
                                     {item.organization}
                                 </div>

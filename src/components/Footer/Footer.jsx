@@ -31,10 +31,18 @@ function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/myexperience"
                                     className="text-white hover:underline hover:underline-offset-2"
                                 >
-                                    Projects
+                                    My Experience
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/myworks"
+                                    className="text-white hover:underline hover:underline-offset-2"
+                                >
+                                    My Work
                                 </a>
                             </li>
                             <li>
@@ -49,7 +57,7 @@ function Footer() {
                     </div>
                     <div className="md:w-1/2 mt-6 md:mt-0 flex flex-col items-center space-y-4">
                         <a
-                            href="#"
+                            href="tel:03344603782"
                             target="_blank"
                             className="bg-blue-500 py-2 px-3 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
                         >
@@ -59,7 +67,7 @@ function Footer() {
                             </div>
                         </a>
                         <a
-                            href="#"
+                            href="mailto:haidermukhtarch405@gmail.com"
                             target="_blank"
                             className="bg-blue-500 py-2 px-3 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
                         >
@@ -94,12 +102,14 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center text-white text-md">
+            <div className="text-center pb-2 text-white text-md">
                 @2024-2025 HaiderMukhtar. All rights reserved.
             </div>
-            <div className="text-center pb-2 text-white text-md">
+            {/*
+                <div className="text-center pb-2 text-white text-md">
                 Supportive Partner ❤️ Haider Mukhtar
-            </div>
+                </div>
+                */}
         </div>
     );
 }

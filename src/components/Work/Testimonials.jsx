@@ -18,20 +18,12 @@ const testimonials = [
         "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
-        "id": 2,
+        "id": 1,
         "profileImage": profilePic,
-        "name": "Haider 2",
-        "organization": "DigiMark Developers 2",
-        "position": "CEO 2",
-        "commit": "loreAliqua in consequat aute laborum sunt. Sint ullamco laboris ut ut elit proident ut. Laboris aliquip adipisicing sit excepteur reprehenderit et ad adipisicing ex consequat cupidatat amet. Non consectetur veniam irure sit commodo voluptate. Ad consectetur cupidatat ut non. Aliquip magna elit reprehenderit."
-    },
-    {
-        "id": 3,
-        "profileImage": profilePic,
-        "name": "Haider 3",
-        "organization": "DigiMark Developers 3",
-        "position": "CEO 3",
-        "commit": "loreAliqua in consequat aute laborum sunt. Sint ullamco laboris ut ut elit proident ut. Laboris aliquip adipisicing sit excepteur."
+        "name": "Muaaz Ahmad",
+        "organization": "MikroStar Tech",
+        "position": "Mobile App Developer",
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     }
 ]
 

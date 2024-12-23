@@ -12,7 +12,6 @@ const projects = [
         "name": "Tesla UI Clone",
         "category": "Web Development",
         "detail": "Tesla Website UI Clone using React JS and Tailwind CSS.",
-        "code": "https://github.com/Haider-Mukhtar/Tesla-UI-Clone",
         "url": "https://tesla-uiclone.netlify.app/"
     },
     {
@@ -21,7 +20,7 @@ const projects = [
         "name": "EventHub App",
         "category": "Mobile App",
         "detail": "EventHub App, developed in React Native & Firebase, served as my internship practice application at MikroStar Tech.",
-        "code": "https://github.com/Haider-Mukhtar/ReactNative-EventHub-App"
+        "url": "https://github.com/Haider-Mukhtar/ReactNative-EventHub-App"
     },
     {
         "id": 1,
@@ -29,7 +28,7 @@ const projects = [
         "name": "Maxfit App",
         "category": "Mobile App",
         "detail": "MaxFit App, developed in React Native & Firebase.",
-        "code": "https://github.com/Haider-Mukhtar/ReactNative-MaxFit-App"
+        "url": "https://github.com/Haider-Mukhtar/ReactNative-MaxFit-App"
     },
     {
         "id": 1,
@@ -37,7 +36,7 @@ const projects = [
         "name": "Todo App",
         "category": "Mobile App",
         "detail": "Todo App, developed in React Native & Firebase, served as my internship practice application at MikroStar Tech.",
-        "code": "https://github.com/Haider-Mukhtar/ReactNative-Todo-App"
+        "url": "https://github.com/Haider-Mukhtar/ReactNative-Todo-App"
     },
 
 ]
@@ -52,7 +51,7 @@ function Projects() {
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 my-10 gap-6'>
                     {
                         projects.map((item) =>
-                            <div className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-300 drop-shadow-xl space-y-3 group'>
+                            <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-300 drop-shadow-xl space-y-3 group'>
                                 <div className='rounded-t-3xl'>
                                     <img className='w-full h-auto rounded-t-3xl object-contain' src={item.image} />
                                 </div>
@@ -68,16 +67,18 @@ function Projects() {
                                             {item.detail}
                                         </div>
                                     </div>
-                                    <div className='grid grid-cols-2 gap-4'>
+                                    {/*
+                                        <div className='grid grid-cols-2 gap-4'>
                                         <a href={item.code} target="_blank" className="text-center rounded-2xl bg-white px-6 py-3 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                                             Code
-                                        </a>
-                                        <a href={item.url} target="_blank" className="text-center rounded-2xl bg-white px-6 py-3 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                                            </a>
+                                            <a href={item.url} target="_blank" className="text-center rounded-2xl bg-white px-6 py-3 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                                             Demo
                                         </a>
                                     </div>
+                                    */}
                                 </div>
-                            </div>
+                            </a>
                         )
                     }
                 </div>
