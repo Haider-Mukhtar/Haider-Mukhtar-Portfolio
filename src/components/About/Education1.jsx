@@ -4,11 +4,12 @@ import React, { useRef } from "react";
 
 export const Education1 = () => {
     return (
-        <section className="bg-white p-4 md:p-8">
+        <div className="flex justify-center my-8">
+        <section className="w-4/5 2xl:px-8">
             <div className='text-5xl sm:text-5xl text-black font-semibold font-primaryBold text-center'>
                 My Education
             </div>
-            <div className="mx-auto max-w-5xl">
+            <div className="">
                 <Link
                     heading="M.Sc. Computer Science"
                     subheading="2024 - Present"
@@ -43,6 +44,7 @@ export const Education1 = () => {
                 />
             </div>
         </section>
+        </div>
     );
 };
 
@@ -80,7 +82,7 @@ const Link = ({ heading, uni, marksin, percentage, subheading, href }) => {
             onMouseMove={handleMouseMove}
             initial="initial"
             whileHover="whileHover"
-            className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-blue-500 mx-8 md:py-8"
+            className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-blue-500  md:py-8"
         >
             <div>
                 <motion.span

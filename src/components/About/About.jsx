@@ -6,12 +6,13 @@ import Footer from '../Footer/Footer'
 import YearOfExperience from './YearOfExperience'
 import Objective from './Objective'
 import { Education1 } from './Education1'
+import AboutCards from './AboutCards'
 
 function About() {
   return (
     <>
         <Navbar />
-        <Objective />
+        <AboutCards />
         <Education1 />
         <Footer />
     </>

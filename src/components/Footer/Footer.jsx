@@ -10,7 +10,62 @@ function Footer() {
     return (
         <div className="bg-blue-500">
             <div className="bg-blue-500 flex justify-center">
-                <div className="md:w-4/5 md:flex py-4">
+                <div className="w-4/5 py-4 ">
+                    <div className="md:w-1/2 flex flex-col justify-between space-y-10">
+                        <div className="flex flex-col">
+                            <span>
+                                <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
+                                    HM.
+                                </Link>
+                            </span>
+                            <spam>
+                                <a
+                                    href="tel:03344603782"
+                                    target="_blank"
+                                    className="hover:underline hover:underline-offset-2 text-white"
+                                >
+                                    <span className="text-lg text-white font-primaryRegular">
+                                        03344603782
+                                    </span>
+                                </a>
+                            </spam>
+                            <span>
+                                <a
+                                    href="mailto:haidermukhtarch405@gmail.com"
+                                    target="_blank"
+                                    className="hover:underline hover:underline-offset-2 text-white"
+                                >
+                                    <span className="text-lg text-white font-primaryRegular">
+                                        haidermukhtarch405@gmail.com
+                                    </span>
+                                </a>
+                            </span>
+                        </div>
+                        <div className="flex flex-row gap-6">
+                            <a
+                                href="https://www.instagram.com/haider_mukhtar_ch/"
+                                target="_blank"
+                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
+                            >
+                                <img className="h-8 w-8" src={instagram} />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/haider-mukhtar/"
+                                target="_blank"
+                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
+                            >
+                                <img className="h-8 w-8" src={linkedin} />
+                            </a>
+                            <a
+                                href="https://github.com/Haider-Mukhtar"
+                                target="_blank"
+                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
+                            >
+                                <img className="h-8 w-8" src={github} />
+                            </a>
+                        </div>
+                    </div>
+                    {/*
                     <div className="md:w-1/2">
                         <ul className="text-center space-y-4 font-primaryRegular">
                             <li>
@@ -55,51 +110,7 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="md:w-1/2 mt-6 md:mt-0 flex flex-col items-center space-y-4">
-                        <a
-                            href="tel:03344603782"
-                            target="_blank"
-                            className="bg-blue-500 py-2 px-3 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
-                        >
-                            <div className="flex flex-row items-center gap-2">
-                                <img className="h-6 w-6" src={phone} />
-                                <div className="text-lg font-semibold text-white font-primarySemiBold">03344603782</div>
-                            </div>
-                        </a>
-                        <a
-                            href="mailto:haidermukhtarch405@gmail.com"
-                            target="_blank"
-                            className="bg-blue-500 py-2 px-3 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
-                        >
-                            <div className="flex flex-row items-center gap-2">
-                                <img className="h-6 w-6" src={email} />
-                                <div className="text-lg font-semibold text-white font-primarySemiBold">haidermukhtarch405@gmail.com</div>
-                            </div>
-                        </a>
-                        <div className="flex flex-row justify-center gap-6">
-                            <a
-                                href="https://www.instagram.com/haider_mukhtar_ch/"
-                                target="_blank"
-                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
-                            >
-                                <img className="h-8 w-8" src={instagram} />
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/haider-mukhtar/"
-                                target="_blank"
-                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
-                            >
-                                <img className="h-8 w-8" src={linkedin} />
-                            </a>
-                            <a
-                                href="https://github.com/Haider-Mukhtar"
-                                target="_blank"
-                                className="bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110"
-                            >
-                                <img className="h-8 w-8" src={github} />
-                            </a>
-                        </div>
-                    </div>
+                    */}
                 </div>
             </div>
             <div className="text-center pb-2 text-white text-md font-primaryRegular">

@@ -51,7 +51,7 @@ function Projects() {
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 my-10 gap-6'>
                     {
                         projects.map((item) =>
-                            <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-300 drop-shadow-xl space-y-3 group'>
+                            <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-700 drop-shadow-xl space-y-3 group'>
                                 <div className='rounded-t-3xl'>
                                     <img className='w-full h-auto rounded-t-3xl object-contain' src={item.image} />
                                 </div>

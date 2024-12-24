@@ -60,9 +60,8 @@ function Intro() {
                         </div>
                     </div>
                     <div className='w-full flex justify-center md:px-6 md:pb-6 lg:pb-0 lg:px-0 xl:px-0 2xl:px-0'>
-                        <div className='bg-blue-500 md:w-full lg:w-4/5 xl:w-4/5 rounded-3xl hover:scale-105 drop-shadow-2xl 
-                        motion-preset-pop
-                        motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate
+                        <div className='bg-blue-500 md:w-full lg:w-4/5 xl:w-4/5 rounded-3xl hover:scale-105 drop-shadow-2xl duration-700
+                        motion-preset-pop motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate
                         '>
                             <img className='rounded-3xl pt-16 object-cver' src={myPic} alt='Profile Pic' />
                         </div>

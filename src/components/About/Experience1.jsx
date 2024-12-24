@@ -12,9 +12,9 @@ const experience = [
         "location": "Lahore, Pakistan",
         "sTime": "Dec 2024",
         "eTime": "Present",
-        "detail1": "null",
-        "detail2": "null",
-        "detail3": "null"
+        "detail1": "Laborum in eiusmod nisi nostrud consectetur voluptate.",
+        "detail2": "Laborum deserunt commodo elit est duis et in Lorem duis aliqua dolor.",
+        "detail3": "Mollit officia enim aliquip do incididunt irure ut in enim incididunt id."
     },
     {
         "id": 2,
@@ -44,29 +44,31 @@ const experience = [
 
 export const Experience1 = () => {
     return (
-        <section className="bg-white p-4 md:p-8">
-            <div className='text-5xl sm:text-5xl text-black font-semibold font-primaryBold text-center'>
-                Work Experience
-            </div>
-            <div className="mx-auto max-w-5xl">
-                {
-                    experience.map((item) =>
-                        <Link
-                            heading={item.title}
-                            subheading={item.level}
-                            organization={item.organization}
-                            location={item.location}
-                            sTime={item.sTime}
-                            eTime={item.eTime}
-                            detail1={item.detail1}
-                            detail2={item.detail2}
-                            detail3={item.detail3}
+        <div className="flex justify-center my-8">
+            <section className="w-4/5 2xl:px-8">
+                <div className='text-5xl sm:text-5xl text-black font-semibold font-primaryBold text-center'>
+                    Work Experience
+                </div>
+                <div className="">
+                    {
+                        experience.map((item) =>
+                            <Link
+                                heading={item.title}
+                                subheading={item.level}
+                                organization={item.organization}
+                                location={item.location}
+                                sTime={item.sTime}
+                                eTime={item.eTime}
+                                detail1={item.detail1}
+                                detail2={item.detail2}
+                                detail3={item.detail3}
 
-                        />
-                    )
-                }
-            </div>
-        </section>
+                            />
+                        )
+                    }
+                </div>
+            </section>
+        </div>
     );
 };
 
@@ -104,7 +106,7 @@ const Link = ({ heading, sTime, eTime, organization, location, detail1, detail2,
             onMouseMove={handleMouseMove}
             initial="initial"
             whileHover="whileHover"
-            className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-blue-500 mx-8 md:py-8"
+            className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-blue-500 md:py-8"
         >
             <div>
                 <motion.span
@@ -152,7 +154,7 @@ const Link = ({ heading, sTime, eTime, organization, location, detail1, detail2,
                     {detail3}
                 </span>
             </div>
-{/*
+            {/*
     <motion.div
         style={{
             top,

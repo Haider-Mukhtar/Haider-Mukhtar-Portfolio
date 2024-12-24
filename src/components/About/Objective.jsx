@@ -15,8 +15,7 @@ function Objective() {
                         Hi, I'm Haider. Nice to meet you.
                     </div>
                     <div className='text-2xl font-primaryRegular text-center  text-white'>
-                        Computer engineer skilled in front-end and mobile app development, proficient in HTML, CSS, JavaScript,
-                        React Native, and more. Demonstrated ability to deliver user-friendly solutions through internships and
+                        Frontend Developer specializing in building engaging user interfaces with HTML, CSS (Tailwind CSS), React, and React Native for web and mobile applications. Demonstrated ability to deliver user-friendly solutions through internships and
                         academic projects. Strong problem-solving skills, innovative thinking, and dedication to ongoing learning
                         and professional development.
                     </div>

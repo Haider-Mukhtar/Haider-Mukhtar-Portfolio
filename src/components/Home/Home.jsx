@@ -10,6 +10,8 @@ import Projects from '../Projects/Projects'
 import Objective from '../About/Objective'
 import { Education1 } from '../About/Education1'
 import { Experience1 } from '../About/Experience1'
+import AboutCards from '../About/AboutCards'
+// import { YearOfExperience1 } from '../About/YearOfExperience1'
 
 function Home() {
     return (
@@ -21,7 +23,7 @@ function Home() {
             <Education1 />
             <YearOfExperience />
             <Experience1 />
-            <Objective />
+            <AboutCards />
             <Projects />
             <Testimonials />
             <GetInTouch />
