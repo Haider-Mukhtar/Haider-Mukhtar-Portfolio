@@ -7,8 +7,33 @@ import leftQuote from './workAssets/leftQuote.svg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee";
 
 const testimonials = [
+    {
+        "id": 1,
+        "profileImage": profilePic,
+        "name": "Muaaz Ahmad",
+        "organization": "MikroStar Tech",
+        "position": "Mobile App Developer",
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
+    },
+    {
+        "id": 1,
+        "profileImage": profilePic,
+        "name": "Muaaz Ahmad",
+        "organization": "MikroStar Tech",
+        "position": "Mobile App Developer",
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
+    },
+    {
+        "id": 1,
+        "profileImage": profilePic,
+        "name": "Muaaz Ahmad",
+        "organization": "MikroStar Tech",
+        "position": "Mobile App Developer",
+        "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
+    },
     {
         "id": 1,
         "profileImage": profilePic,
@@ -44,7 +69,7 @@ const testimonials = [
 //         </div>
 //     );
 // }
-  
+
 
 function Testimonials() {
 
@@ -66,6 +91,7 @@ function Testimonials() {
         <div className='bg-blue-500 flex justify-center py-10'>
             <div className='w-4/5 flex justify-center'>
                 <div className='md:w-4/5 w-full'>
+                    {/*
                     <Slider {...settings}>
                         {
                             testimonials.map((item) =>
@@ -91,6 +117,55 @@ function Testimonials() {
                                 )
                             }
                             </Slider>
+                    */}
+                    <Marquee pauseOnHover autoFill>
+                        {
+                            testimonials.map((item) =>
+                                <div className='space-y-4 py-4 bg-white rounded-3xl mx-4 w-96 cursor-pointer'>
+                                    <img className='w-10 ml-auto mr-auto' src={profilePic} />
+                                    <div className='flex flex-col justify-center items-center px-10'>
+                                        <div className='text-center text-blue-500 text-lg'>
+                                            {item.commit}
+                                        </div>
+                                        <div className='mt-4 text-xl font-serif font-bold text-blue-500'>
+                                            {item.name}
+                                        </div>
+                                        <div className=' text-lg text-blue-500'>
+                                            {item.position}
+                                        </div>
+                                        <div className=' text-lg text-blue-500'>
+                                            {item.organization}
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    </Marquee>
+                    {/*
+                        <Marquee pauseOnHover autoFill direction='right' className='mt-10'>
+                            {
+                                testimonials.map((item) =>
+                                    <div className='space-y-4 py-4 bg-white rounded-3xl mx-4 w-96 cursor-pointer'>
+                                        <img className='w-10 ml-auto mr-auto' src={profilePic} />
+                                        <div className='flex flex-col justify-center items-center px-10'>
+                                            <div className='text-center text-blue-500 text-lg'>
+                                                {item.commit}
+                                            </div>
+                                            <div className='mt-4 text-xl font-serif font-bold text-blue-500'>
+                                                {item.name}
+                                            </div>
+                                            <div className=' text-lg text-blue-500'>
+                                                {item.position}
+                                            </div>
+                                            <div className=' text-lg text-blue-500'>
+                                                {item.organization}
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        </Marquee>
+                        */}
                 </div>
             </div>
         </div>
