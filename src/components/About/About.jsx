@@ -5,13 +5,14 @@ import Experience from './Experience'
 import Footer from '../Footer/Footer'
 import YearOfExperience from './YearOfExperience'
 import Objective from './Objective'
+import { Education1 } from './Education1'
 
 function About() {
   return (
     <>
         <Navbar />
         <Objective />
-        <Education />
+        <Education1 />
         <Footer />
     </>
   )

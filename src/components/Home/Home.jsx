@@ -8,6 +8,8 @@ import YearOfExperience from '../About/YearOfExperience'
 import Testimonials from '../Work/Testimonials'
 import Projects from '../Projects/Projects'
 import Objective from '../About/Objective'
+import { Education1 } from '../About/Education1'
+import { Experience1 } from '../About/Experience1'
 
 function Home() {
     return (
@@ -16,9 +18,9 @@ function Home() {
             */}
             <Intro />
             <Skills />
-            <Education />
+            <Education1 />
             <YearOfExperience />
-            <Experience />
+            <Experience1 />
             <Objective />
             <Projects />
             <Testimonials />
