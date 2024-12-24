@@ -30,9 +30,9 @@ function Navbar() {
                         {/*
                         <img className='h-14' src={myPic} alt='Profile Pic' />
                         */}
-                        <div className='text-3xl font-bold font-sans text-blue-500'>HM.</div>
+                        <div className='text-3xl font-primaryBold text-blue-500 drop-shadow-2xl'>HM.</div>
                     </Link>
-                    <ul className='sm:flex gap-4 hidden'>
+                    <ul className='lg:flex gap-4 hidden'>
                         {links.map((link) => (
                             <li>
                                 <Link
@@ -40,7 +40,7 @@ function Navbar() {
                                     className={
                                         `${location.pathname === link.path ? 'text-white' : 'text-black'} 
                                         ${location.pathname === link.path ? 'bg-blue-500' : 'bg-white'}
-                                         hover:bg-blue-300 hover:text-white font-sans py-2 px-4 rounded-lg 
+                                         hover:bg-blue-100 hover:text-black font-primaryRegular py-2 px-4 rounded-lg 
                                          `}
                                 >
                                     {link.name}
@@ -48,7 +48,7 @@ function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <div className='sm:hidden block mt-auto'>
+                    <div className='lg:hidden block mt-auto'>
                         <button className='px-1' onClick={handelDropdown}>
                             <img className='h-10' src={menuIcon} />
                         </button>
@@ -68,7 +68,7 @@ function Navbar() {
                                                 `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} 
                                             ${location.pathname === link.path ? 'underline underline-offset-2' : 'no-underline'
                                                 }
-                                            hover:text-blue-700 hover:underline hover:underline-offset-2 font-sans`}
+                                            hover:text-blue-700 hover:underline hover:underline-offset-2 font-primaryRegular`}
                                         >
                                             {link.name}
                                         </Link>

@@ -45,7 +45,7 @@ function Projects() {
     return (
         <div className='flex justify-center mt-8'>
             <div className='w-4/5 2xl:px-8'>
-                <div className='text-5xl sm:text-5xl font-semibold font-serif text-center'>
+                <div className='text-5xl sm:text-5xl font-semibold font-primaryBold text-center'>
                     My Projects
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 my-10 gap-6'>
@@ -57,13 +57,13 @@ function Projects() {
                                 </div>
                                 <div className='flex flex-col px-6 pb-6 h-full space-y-3 justify-between'>
                                     <div className='space-y-3'>
-                                        <div className='text-xl text-white'>
+                                        <div className='text-xl text-white font-primarySemiBold'>
                                             {item.category}
                                         </div>
-                                        <div className='text-2xl font-serif font-semibold text-white'>
+                                        <div className='text-2xl font-primaryBold font-semibold text-white'>
                                             {item.name}
                                         </div>
-                                        <div className='text-md text-white line-clamp-5'>
+                                        <div className='text-md text-white line-clamp-5 font-primaryRegular'>
                                             {item.detail}
                                         </div>
                                     </div>

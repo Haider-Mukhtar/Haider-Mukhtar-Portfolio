@@ -12,7 +12,7 @@ function Footer() {
             <div className="bg-blue-500 flex justify-center">
                 <div className="md:w-4/5 md:flex py-4">
                     <div className="md:w-1/2">
-                        <ul className="text-center space-y-4">
+                        <ul className="text-center space-y-4 font-primaryRegular">
                             <li>
                                 <Link
                                     to="/"
@@ -63,7 +63,7 @@ function Footer() {
                         >
                             <div className="flex flex-row items-center gap-2">
                                 <img className="h-6 w-6" src={phone} />
-                                <div className="text-lg font-semibold text-white">03344603782</div>
+                                <div className="text-lg font-semibold text-white font-primarySemiBold">03344603782</div>
                             </div>
                         </a>
                         <a
@@ -73,7 +73,7 @@ function Footer() {
                         >
                             <div className="flex flex-row items-center gap-2">
                                 <img className="h-6 w-6" src={email} />
-                                <div className="text-lg font-semibold text-white">haidermukhtarch405@gmail.com</div>
+                                <div className="text-lg font-semibold text-white font-primarySemiBold">haidermukhtarch405@gmail.com</div>
                             </div>
                         </a>
                         <div className="flex flex-row justify-center gap-6">
@@ -102,11 +102,11 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center pb-2 text-white text-md">
+            <div className="text-center pb-2 text-white text-md font-primaryRegular">
                 @2024-2025 HaiderMukhtar. All rights reserved.
             </div>
             {/*
-                <div className="text-center pb-2 text-white text-md">
+                <div className="text-center pb-2 text-white text-md font-primaryRegular">
                 Supportive Partner ❤️ Haider Mukhtar
                 </div>
                 */}

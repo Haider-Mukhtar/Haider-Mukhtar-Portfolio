@@ -88,9 +88,9 @@ function Testimonials() {
     };
 
     return (
-        <div className='bg-blue-500 flex justify-center py-10'>
+        <div className='bg-blue-500 flex justify-center'>
             <div className='w-4/5 flex justify-center'>
-                <div className='md:w-4/5 w-full'>
+                <div className='md:w-11/12 w-full'>
                     {/*
                     <Slider {...settings}>
                         {
@@ -121,20 +121,22 @@ function Testimonials() {
                     <Marquee pauseOnHover autoFill>
                         {
                             testimonials.map((item) =>
-                                <div className='space-y-4 py-4 bg-white rounded-3xl mx-4 w-96 cursor-pointer'>
-                                    <img className='w-10 ml-auto mr-auto' src={profilePic} />
-                                    <div className='flex flex-col justify-center items-center px-10'>
-                                        <div className='text-center text-blue-500 text-lg'>
-                                            {item.commit}
-                                        </div>
-                                        <div className='mt-4 text-xl font-serif font-bold text-blue-500'>
-                                            {item.name}
-                                        </div>
-                                        <div className=' text-lg text-blue-500'>
-                                            {item.position}
-                                        </div>
-                                        <div className=' text-lg text-blue-500'>
-                                            {item.organization}
+                                <div className='group my-10'>
+                                    <div className='space-y-4 py-4 bg-white rounded-3xl mx-4 w-72 sm:w-96 cursor-pointer group-hover:scale-105 duration-500 drop-shadow-2xl'>
+                                        <img className='w-10 ml-auto mr-auto' src={profilePic} />
+                                        <div className='flex flex-col justify-center items-center px-10'>
+                                            <div className='text-center text-blue-500 text-lg font-primaryRegular'>
+                                                {item.commit}
+                                            </div>
+                                            <div className='mt-4 text-xl font-bold text-blue-500 font-primaryBold'>
+                                                {item.name}
+                                            </div>
+                                            <div className=' text-lg text-blue-500 font-primarySemiBold'>
+                                                {item.position}
+                                            </div>
+                                            <div className=' text-lg text-blue-500 font-primaryRegular'>
+                                                {item.organization}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

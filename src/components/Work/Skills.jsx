@@ -64,10 +64,10 @@ function Skills() {
     return (
         <div className='flex justify-center mt-8'>
             <div className='w-4/5 2xl:px-8'>
-                <div className='text-5xl sm:text-5xl font-semibold font-serif text-center'>
+                <div className='text-5xl sm:text-5xl font-primaryBold text-center drop-shadow-2xl'>
                     My Works Skills
                 </div>
-                <div className='text-3xl font-serif font-semibold mt-2 text-center text-blue-600'>
+                <div className='text-3xl font-primarySemiBold mt-2 text-center text-blue-600'>
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
@@ -100,7 +100,7 @@ function Skills() {
                                 <div>
                                     <img className='w-16 h-16 object-contain' src={item.image} />
                                 </div>
-                                <div className='text-xl font-semibold text-white'>
+                                <div className='text-xl font-primarySemiBold text-white'>
                                     {item.title}
                                 </div>
                             </div>

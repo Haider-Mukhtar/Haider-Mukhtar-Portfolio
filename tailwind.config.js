@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        primaryRegular:['Regular'],
+        primarySemiBold:['SemiBold'],
+        primaryBold:['Bold']
+      }
+    },
   },
   plugins: [
     require('tailwindcss-animated'),

@@ -25,39 +25,39 @@ function GetInTouch() {
             <div className='w-4/5 2xl:px-8'>
                 <div className='grid md:grid-cols-2 sm:my-10 my-10 md:my-8 lg:my-10'>
                     <div className='md:px-0 flex flex-col  items-center lg:items-start md:mb-0 sm:mb-10 mb-10 motion-preset-slide-right space-y-2 lg:space-y-4'>
-                        <div className='text-5xl font-serif font-bold text-center sm:text-start'>
+                        <div className='text-5xl font-primaryBold font-bold text-center sm:text-start'>
                             Get In Touch
                         </div>
                         <div className='space-y-5 w-full'>
                             <div className='space-y-1'>
-                                <label for="name" className='text-xl'>
+                                <label for="name" className='text-xl font-primaryRegular'>
                                     Name <span className='text-red-600'>*</span> {nameError ?
                                         <span className='text-red-500 text-base'>
                                             Please enter your name.
                                         </span>
                                         : null}
                                 </label>
-                                <input id="name" autocomplete="name" className='text-xl px-1 py-4 w-full outline-none border-b-2 border-black' placeholder='Enter your Name' type='text' />
+                                <input id="name" autocomplete="name" className='text-xl px-1 py-4 w-full outline-none border-b-2 border-black font-primaryRegular' placeholder='Enter your Name' type='text' />
                             </div>
                             <div className='space-y-1'>
-                                <label for="email" className='text-xl'>
+                                <label for="email" className='text-xl font-primaryRegular'>
                                     Email <span className='text-red-600'>*</span> {emailError ?
                                         <span className='text-red-500 text-base'>
                                             Please enter your email.
                                         </span>
                                         : null}
                                 </label>
-                                <input id="email" autocomplete="email" className='text-xl px-1 py-4 w-full outline-none border-b-2 border-black' placeholder='Enter your Email' type='email' />
+                                <input id="email" autocomplete="email" className='text-xl px-1 py-4 w-full outline-none border-b-2 border-black font-primaryRegular' placeholder='Enter your Email' type='email' />
                             </div>
                             <div className='space-y-1'>
-                                <label for="msg" className='text-xl'>Comment or Message</label>
-                                <textarea id="msg" rows="3" className='text-xl px-1 py-4 outline-none border-b-2 border-black w-full' placeholder='Enter your Message' type='text' />
+                                <label for="msg" className='text-xl font-primaryRegular'>Comment or Message</label>
+                                <textarea id="msg" rows="3" className='text-xl px-1 py-4 outline-none border-b-2 border-black w-full font-primaryRegular' placeholder='Enter your Message' type='text' />
                             </div>
                             <div className='mx-10'>
                                 <button
                                     onClick={handelSubmit}
                                     className='w-full flex flex-row justify-center items-center bg-blue-500 hover:bg-blue-400 lg:px-10 md:px-8 sm:py-4 py-3 px-3 rounded-full hover:transition-transform hover:scale-105'>
-                                    <div className='text-xl font-bold text-white text-center'>
+                                    <div className='text-xl font-bold text-white text-center font-primaryBold'>
                                         SUBMIT
                                     </div>
                                 </button>

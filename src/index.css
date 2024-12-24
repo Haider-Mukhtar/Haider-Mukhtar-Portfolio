@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: local("DMSans_18pt-Regular"),
+    url("./assets/fonts/DMSans_18pt-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bold";
+  src: local("DMSans_18pt-Bold"),
+    url("./assets/fonts/DMSans_18pt-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SemiBold";
+  src: local("DMSans_18pt-SemiBold"),
+    url("./assets/fonts/DMSans_18pt-SemiBold.ttf") format("truetype");
+}

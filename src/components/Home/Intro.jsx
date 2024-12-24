@@ -13,10 +13,10 @@ function Intro() {
             <div className='w-4/5 2xl:px-8'>
                 <div className='grid md:grid-cols-2 sm:my-10 my-10 md:my-8 lg:my-10'>
                     <div className='md:px-0 flex flex-col justify-center items-center lg:items-start sm:mb-10 mb-10 motion-preset-slide-right '>
-                        <div className='text-5xl font-serif font-bold text-center lg:text-start'>
+                        <div className='text-5xl font-primaryBold font-bold text-center lg:text-start'>
                             I'm Haider Mukhtar
                         </div>
-                        <div className='text-3xl font-serif font-semibold mt-2 text-center text-blue-600'>
+                        <div className='text-3xl font-primarySemiBold font-semibold mt-2 text-center text-blue-600'>
                             <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
@@ -34,30 +34,29 @@ function Intro() {
                                 repeat={Infinity}
                             />
                         </div>
-                        <div className='flex mt-4'>
-                            <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 lg:px-10 md:px-8 sm:py-4 py-3 px-3 rounded-full hover:transition-transform hover:scale-105 
-                            motion-scale-in-[0.5] motion-translate-x-in-[-120%] motion-translate-y-in-[-60%] motion-opacity-in-[33%] motion-rotate-in-[-1080deg] motion-blur-in-[10px] motion-delay-[0.38s]/scale motion-duration-[0.38s]/opacity motion-duration-[1.20s]/rotate motion-duration-[0.15s]/blur motion-delay-[0.60s]/blur motion-ease-spring-bouncier
+                        <div className='flex mt-20 gap-4 flex-col items-center'>
+                            <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 lg:px-6 md:px-6 sm:py-3 py-2 px-2 rounded-full hover:transition-transform hover:scale-105 drop-shadow-xl 
                             '>
-                                <div className='text-xl font-bold text-white mr-2'>
+                                <div className='text-xl font-bold font-primaryRegular text-white mr-2'>
                                     HIRE ME NOW
                                 </div>
                                 <img className='sm:w-10 sm:h-8 h-6 w-8' src={rightArrow} />
                             </Link>
-                        </div>
-                        <div className='flex flex-row gap-6 mt-10'>
-                            <a
-                                href='https://www.instagram.com/haider_mukhtar_ch/' target="_blank"
-                                className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once'>
-                                <img className='h-8 w-8' src={instagram} />
-                            </a>
-                            <a
-                                href='https://www.linkedin.com/in/haider-mukhtar/' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-twice'>
-                                <img className='h-8 w-8' src={linkedin} />
-                            </a>
-                            <a
-                                href='https://github.com/Haider-Mukhtar' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-thrice'>
-                                <img className='h-8 w-8' src={github} />
-                            </a>
+                            <div className='flex flex-row gap-4'>
+                                <a
+                                    href='https://www.instagram.com/haider_mukhtar_ch/' target="_blank"
+                                    className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
+                                    <img className='h-8 w-8' src={instagram} />
+                                </a>
+                                <a
+                                    href='https://www.linkedin.com/in/haider-mukhtar/' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
+                                    <img className='h-8 w-8' src={linkedin} />
+                                </a>
+                                <a
+                                    href='https://github.com/Haider-Mukhtar' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
+                                    <img className='h-8 w-8' src={github} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className='w-full flex justify-center md:px-6 md:pb-6 lg:pb-0 lg:px-0 xl:px-0 2xl:px-0'>
