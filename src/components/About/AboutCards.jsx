@@ -11,8 +11,8 @@ function AboutCards() {
     return (
         <div className='flex justify-center mt-1 py-10'>
             <div className='w-4/5 2xl:px-8'>
-                <div className='flex flex-row gap-4'>
-                    <div className='w-1/2 bg-blue-500 p-6 space-y-4 rounded-xl'>
+                <div className='flex flex-col sm:flex-row gap-4'>
+                    <div className='sm:w-1/2 bg-blue-500 p-6 space-y-4 rounded-xl'>
                         <img className='w-16 h-16 bg-white rounded-full' src={pic} />
                         <div className='text-4xl text-white font-primaryRegular'>
                             <span className='font-primaryBold'>
@@ -21,25 +21,25 @@ function AboutCards() {
                         </div>
                         <div className='text-xl text-white font-primaryRegular'>
                             <Link href='/contact'>
-                                <div className='flex flex-row items-center gap-1 font-primarySemiBold'>
+                                <div className='flex flex-row items-center gap-1 font-primarySemiBold hover:underline hover:underline-offset-2'>
                                     Contact
                                     <img className='w-6 h-6' src={arrowRight} />
                                 </div>
                             </Link>
                         </div>
                     </div>
-                    <div className='w-1/2'>
+                    <div className='sm:w-1/2'>
                         <div className='grid grid-cols-2 h-full gap-4'>
-                            <a href='https://www.linkedin.com/in/haider-mukhtar/' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:-rotate-3 duration-500'>
+                            <a href='https://www.linkedin.com/in/haider-mukhtar/' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:-rotate-3 duration-500 py-8'>
                                 <img className='h-14 w-14' src={linkedin} />
                             </a>
-                            <a href='https://github.com/Haider-Mukhtar' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:rotate-3 duration-500'>
+                            <a href='https://github.com/Haider-Mukhtar' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:rotate-3 duration-500 py-8'>
                                 <img className='h-14 w-14' src={github} />
                             </a>
-                            <a href='https://www.instagram.com/haider_mukhtar_ch/' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:-rotate-3 duration-500'>
+                            <a href='https://www.instagram.com/haider_mukhtar_ch/' className='bg-blue-500 rounded-xl flex justify-center items-center hover:scale-105 hover:transition-transform hover:-rotate-3 duration-500 py-8'>
                                 <img className='h-14 w-14' src={instagram} />
                             </a>
-                            <a href={myCV} className='bg-blue-500 rounded-xl flex justify-center items-center text-white font-primaryBold text-2xl hover:scale-105 hover:transition-transform hover:rotate-3 duration-500'>
+                            <a href={myCV} className='bg-blue-500 rounded-xl flex justify-center items-center text-white font-primaryBold text-2xl hover:scale-105 hover:transition-transform hover:rotate-3 duration-500 text-center py-8'>
                                 Download CV
                             </a>
                         </div>
