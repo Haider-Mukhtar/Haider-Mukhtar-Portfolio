@@ -13,7 +13,7 @@ function Navbar() {
         { name: 'About Me', path: '/about' },
         { name: 'My Experience', path: '/myexperience' },
         { name: 'My Works', path: '/myworks' },
-        { name: 'Contact', path: '/contact' },
+        { name: 'Hire Me', path: '/contact' },
     ];
 
     const [showDropdown, setShowDropdown] = useState(false)

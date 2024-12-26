@@ -20,7 +20,7 @@ function AboutCards() {
                             </span> I build cool websites like this one.
                         </div>
                         <div className='text-xl text-white font-primaryRegular'>
-                            <Link href='/contact'>
+                            <Link to='/contact'>
                                 <div className='flex flex-row items-center gap-1 font-primarySemiBold hover:underline hover:underline-offset-2'>
                                     Contact
                                     <img className='w-6 h-6' src={arrowRight} />

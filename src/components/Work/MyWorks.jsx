@@ -5,6 +5,7 @@ import Skills from './Skills'
 import GetInTouch from '../Contact/GetInTouch'
 import Testimonials from './Testimonials'
 import Projects from '../Projects/Projects'
+import Footer1 from '../Footer/Footer1'
 
 function MyWorks() {
   return (
@@ -14,7 +15,7 @@ function MyWorks() {
         <Projects />
         <Testimonials />
         <GetInTouch />
-        <Footer />
+        <Footer1 />
     </>
   )
 }

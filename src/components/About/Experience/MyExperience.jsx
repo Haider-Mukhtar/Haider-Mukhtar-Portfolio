@@ -5,6 +5,7 @@ import Footer from '../../Footer/Footer'
 import Testimonials from '../../Work/Testimonials'
 import GetInTouch from '../../Contact/GetInTouch'
 import { Experience1 } from '../Experience1'
+import Footer1 from '../../Footer/Footer1'
 
 function MyExperience() {
     return (
@@ -13,7 +14,7 @@ function MyExperience() {
             <Experience1 />
             <Testimonials />
             <GetInTouch />
-            <Footer />
+            <Footer1 />
         </>
     )
 }
