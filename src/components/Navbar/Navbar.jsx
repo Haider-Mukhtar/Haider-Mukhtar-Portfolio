@@ -40,8 +40,7 @@ function Navbar() {
                                     className={
                                         `${location.pathname === link.path ? 'text-white' : 'text-black'} 
                                         ${location.pathname === link.path ? 'bg-blue-500' : 'bg-white'}
-                                         hover:bg-blue-100 hover:text-black font-primaryRegular py-2 px-4 rounded-lg 
-                                         `}
+                                         hover:bg-blue-100 hover:text-black font-primaryRegular py-2 px-4 rounded-lg`}
                                 >
                                     {link.name}
                                 </Link>
