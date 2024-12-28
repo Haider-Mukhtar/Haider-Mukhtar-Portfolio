@@ -4,6 +4,8 @@ import maxfitProject from './projectAssets/maxfitProject.png'
 import todoProject from './projectAssets/todoProject.png'
 import teslaProject from './projectAssets/teslaProject.png'
 import teslaProject1 from './projectAssets/teslaProject1.png'
+import { FaGithub } from 'react-icons/fa6'
+import { CiLink } from 'react-icons/ci'
 
 const projects = [
     {
@@ -12,6 +14,7 @@ const projects = [
         "name": "Tesla UI Clone",
         "category": "Web Development",
         "detail": "Tesla Website UI Clone using React JS and Tailwind CSS.",
+        "github": "https://github.com/Haider-Mukhtar/Tesla-UI-Clone",
         "url": "https://tesla-uiclone.netlify.app/"
     },
     {
@@ -20,6 +23,7 @@ const projects = [
         "name": "EventHub App",
         "category": "Mobile App",
         "detail": "EventHub App, developed in React Native & Firebase, served as my internship practice application at MikroStar Tech.",
+        "github": "https://github.com/Haider-Mukhtar/ReactNative-EventHub-App",
         "url": "https://github.com/Haider-Mukhtar/ReactNative-EventHub-App"
     },
     {
@@ -28,6 +32,7 @@ const projects = [
         "name": "Maxfit App",
         "category": "Mobile App",
         "detail": "MaxFit App, developed in React Native & Firebase.",
+        "github": "https://github.com/Haider-Mukhtar/ReactNative-MaxFit-App",
         "url": "https://github.com/Haider-Mukhtar/ReactNative-MaxFit-App"
     },
     {
@@ -36,6 +41,7 @@ const projects = [
         "name": "Todo App",
         "category": "Mobile App",
         "detail": "Todo App, developed in React Native & Firebase, served as my internship practice application at MikroStar Tech.",
+        "github": "https://github.com/Haider-Mukhtar/ReactNative-Todo-App",
         "url": "https://github.com/Haider-Mukhtar/ReactNative-Todo-App"
     },
 
@@ -48,37 +54,48 @@ function Projects() {
                 <div className='text-5xl sm:text-5xl font-semibold font-primaryBold text-center'>
                     My Projects
                 </div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 my-10 gap-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 my-10 gap-6'>
                     {
                         projects.map((item) =>
-                            <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-700 drop-shadow-xl space-y-3 group'>
-                                <div className='rounded-t-3xl'>
-                                    <img className='w-full h-auto rounded-t-3xl object-contain' src={item.image} />
-                                </div>
-                                <div className='flex flex-col px-6 pb-6 h-full space-y-3 justify-between'>
-                                    <div className='space-y-3'>
-                                        <div className='text-xl text-white font-primarySemiBold'>
-                                            {item.category}
+                            <div className='w-full col-span-1 bg-black relative rounded-xl overflow-hidden flex items-center justify-center group hover:shadow-lg transition-shadow'>
+                                <img className='size-full object-cover aspect-[9/16] group-hover:opacity-50' alt="project-image" src={item.image} />
+                                <div className='group-hover:flex hidden w-full h-full absolute inset-0 flex-col items-end justify-end bg-gradient-to-t from-blue-500 via-transparent to-transparent'>
+                                    <div className='w-full flex flex-col items-center justify-center p-3.5 gap-3.5'>
+                                        <div className='w-full flex items-center justify-center'>
+                                            <span className='flex-1 text-left text-xl text-white font-bold font-primaryBold'>{item.name}</span>
+                                            <div className='flex items-center justify-center gap-1.5'>
+                                                <a href={item.github} target='_blank'>
+                                                <FaGithub className='size-9 bg-white p-2 rounded-full'/>
+                                                </a>
+                                                <a href={item.url} target='_blank'>
+                                                <CiLink className='size-9 bg-white p-2 rounded-full'/>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className='text-2xl font-primaryBold font-semibold text-white'>
-                                            {item.name}
-                                        </div>
-                                        <div className='text-md text-white line-clamp-5 font-primaryRegular'>
-                                            {item.detail}
-                                        </div>
+                                        <p className='w-full text-left text-sm text-white font-primaryRegular'>
+                                        {item.detail}
+                                        </p>
                                     </div>
-                                    {/*
-                                        <div className='grid grid-cols-2 gap-4'>
-                                        <a href={item.code} target="_blank" className="text-center rounded-2xl bg-white px-6 py-3 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
-                                            Code
-                                            </a>
-                                            <a href={item.url} target="_blank" className="text-center rounded-2xl bg-white px-6 py-3 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
-                                            Demo
-                                        </a>
-                                    </div>
-                                    */}
                                 </div>
-                            </a>
+                            </div>
+                            // <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-700 drop-shadow-xl space-y-3 group'>
+                            //     <div className='rounded-t-3xl'>
+                            //         <img className='w-full h-auto rounded-t-3xl object-contain' src={item.image} />
+                            //     </div>
+                            //     <div className='flex flex-col px-6 pb-6 h-full space-y-3 justify-between'>
+                            //         <div className='space-y-3'>
+                            //             <div className='text-xl text-white font-primarySemiBold'>
+                            //                 {item.category}
+                            //             </div>
+                            //             <div className='text-2xl font-primaryBold font-semibold text-white'>
+                            //                 {item.name}
+                            //             </div>
+                            //             <div className='text-md text-white line-clamp-5 font-primaryRegular'>
+                            //                 {item.detail}
+                            //             </div>
+                            //         </div>
+                            //     </div>
+                            // </a>
                         )
                     }
                 </div>

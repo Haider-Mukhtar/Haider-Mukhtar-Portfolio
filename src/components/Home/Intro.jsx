@@ -12,8 +12,8 @@ function Intro() {
         <div className='flex justify-center'>
             <div className='w-4/5 2xl:px-8'>
                 <div className='grid md:grid-cols-2 sm:my-10 my-10 md:my-8 lg:my-10'>
-                    <div className='md:px-0 flex flex-col justify-center items-center lg:items-start sm:mb-10 mb-10 motion-preset-slide-right '>
-                        <div className='text-5xl font-primaryBold font-bold text-center lg:text-start'>
+                    <div className='md:px-0 flex flex-col justify-start items-start lg:items-start motion-preset-slide-right'>
+                        <div className='text-5xl font-primaryBold font-bold text-start'>
                             I'm Haider Mukhtar
                         </div>
                         <div className='text-3xl font-primarySemiBold font-semibold mt-2 text-center text-blue-600'>
@@ -34,29 +34,29 @@ function Intro() {
                                 repeat={Infinity}
                             />
                         </div>
-                        <div className='flex mt-20 gap-4 flex-col items-center'>
-                            <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 lg:px-6 md:px-6 sm:py-3 py-2 px-2 rounded-full hover:transition-transform hover:scale-105 drop-shadow-xl 
+                        <div className='flex my-10 gap-4 justify-center items-center'>
+                            <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 py-1 pl-3 pr-1 rounded-full hover:transition-transform hover:scale-105 drop-shadow-xl 
                             '>
-                                <div className='text-xl font-bold font-primaryRegular text-white mr-2'>
-                                    HIRE ME NOW
+                                <div className='text-lg capitalize font-bold font-primaryRegular text-white mr-2'>
+                                    hire me now
                                 </div>
-                                <img className='sm:w-10 sm:h-8 h-6 w-8' src={rightArrow} />
+                                <div className='size-8 p-1.5 flex items-center justify-center bg-white rounded-full'>
+                                    <img className='size-full' src={rightArrow} />
+                                </div>
                             </Link>
-                            <div className='flex flex-row gap-4'>
-                                <a
-                                    href='https://www.instagram.com/haider_mukhtar_ch/' target="_blank"
-                                    className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
-                                    <img className='h-8 w-8' src={instagram} />
-                                </a>
-                                <a
-                                    href='https://www.linkedin.com/in/haider-mukhtar/' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
-                                    <img className='h-8 w-8' src={linkedin} />
-                                </a>
-                                <a
-                                    href='https://github.com/Haider-Mukhtar' target="_blank" className='bg-blue-500 p-2 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl '>
-                                    <img className='h-8 w-8' src={github} />
-                                </a>
-                            </div>
+                            <a
+                                href='https://www.instagram.com/haider_mukhtar_ch/' target="_blank"
+                                className='bg-blue-500 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl size-[41px] p-2.5'>
+                                <img className='size-full' src={instagram} />
+                            </a>
+                            <a
+                                href='https://www.linkedin.com/in/haider-mukhtar/' target="_blank" className='bg-blue-500 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl size-[41px] p-2.5'>
+                                <img className='size-full' src={linkedin} />
+                            </a>
+                            <a
+                                href='https://github.com/Haider-Mukhtar' target="_blank" className='bg-blue-500 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl size-[41px] p-2.5'>
+                                <img className='size-full' src={github} />
+                            </a>
                         </div>
                     </div>
                     <div className='w-full flex justify-center md:px-6 md:pb-6 lg:pb-0 lg:px-0 xl:px-0 2xl:px-0'>

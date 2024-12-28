@@ -9,7 +9,7 @@ import { Link } from 'react-router'
 
 function AboutCards() {
     return (
-        <div className='flex justify-center mt-1 py-10'>
+        <div className='flex justify-center mt-8'>
             <div className='w-4/5 2xl:px-8'>
                 <div className='flex flex-col sm:flex-row gap-4'>
                     <div className='sm:w-1/2 bg-blue-500 p-6 space-y-4 rounded-xl'>
@@ -45,9 +45,11 @@ function AboutCards() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-blue-500 mt-4 rounded-xl p-6 text-3xl text-white text-justify font-primaryRegular'>
+                {/*
+                    <div className='bg-blue-500 mt-4 rounded-xl p-6 text-3xl text-white text-justify font-primaryRegular'>
                     Frontend Developer specializing in building engaging user interfaces with HTML, CSS (Tailwind CSS), React, and React Native for web and mobile applications. Demonstrated ability to deliver user-friendly solutions through internships and academic projects. Strong problem-solving skills, innovative thinking, and dedication to ongoing learning and professional development.
-                </div>
+                    </div>
+                    */}
             </div>
         </div>
     )

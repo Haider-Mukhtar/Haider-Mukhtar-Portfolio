@@ -6,7 +6,8 @@ import App from './App.jsx'
 import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import MyWorks from './components/Work/MyWorks.jsx';
-import MyExperience from './components/About/Experience/MyExperience.jsx';
+import MyExperience from './components/Experience/MyExperience.jsx';
+
 
 
 createRoot(document.getElementById('root')).render(

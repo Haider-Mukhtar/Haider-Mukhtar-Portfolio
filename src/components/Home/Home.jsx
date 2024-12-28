@@ -1,16 +1,16 @@
 import React from 'react'
 import Intro from './Intro'
 import Skills from '../Work/Skills'
-import Education from '../About/Education'
-import Experience from '../About/Experience'
-import GetInTouch from '../Contact/GetInTouch'
+// import Education from '../About/Education'
+// import Experience from '../About/Experience'
+// import GetInTouch from '../Contact/GetInTouch'
 import YearOfExperience from '../About/YearOfExperience'
 import Testimonials from '../Work/Testimonials'
 import Projects from '../Projects/Projects'
-import Objective from '../About/Objective'
-import { Education1 } from '../About/Education1'
-import { Experience1 } from '../About/Experience1'
 import AboutCards from '../About/AboutCards'
+import NewExperienceCards from '../Experience/NewExperienceCards'
+import LetsTalk from '../Contact/LetsTalk'
+// import { Experience1 } from '../Experience/Experience1'
 // import { YearOfExperience1 } from '../About/YearOfExperience1'
 
 function Home() {
@@ -20,13 +20,12 @@ function Home() {
             */}
             <Intro />
             <Skills />
-            <Education1 />
-            <YearOfExperience />
-            <Experience1 />
-            <AboutCards />
             <Projects />
+            <YearOfExperience />
+            <NewExperienceCards />
+            <AboutCards />
             <Testimonials />
-            <GetInTouch />
+            <LetsTalk />
         </div>
     )
 }

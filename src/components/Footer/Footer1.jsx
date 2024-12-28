@@ -11,19 +11,12 @@ import email from "./footerAssets/email.svg";
 function Footer1() {
     return (
         <div className="bg-blue-500 flex justify-center items-center flex-col">
-            <div className="w-4/5 py-6 grid md:grid-cols-3 gap-6">
+            <div className="w-4/5 py-6 grid md:grid-cols-2 gap-6">
                 <div className='space-y-2'>
-                    <div>
-                        <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
-                            HM.
-                        </Link>
-                    </div>
-                    <div className='font-primaryRegular text-sm text-white'>
-                        Frontend Developer specializing in building engaging user interfaces with HTML, CSS (Tailwind CSS), React, and React Native for web and mobile applications. Demonstrated ability to deliver user-friendly solutions through internships and academic projects. Strong problem-solving skills, innovative thinking, and dedication to ongoing learning and professional development.
-                    </div>
-                </div>
-                <div className='md:flex justify-around hidden'>
-                    <ul className="space-y-4 font-primaryRegular">
+                    <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
+                        HM.
+                    </Link>
+                    <ul className="font-primaryRegular flex gap-3">
                         <li>
                             <Link
                                 to="/"
@@ -71,7 +64,7 @@ function Footer1() {
                         <div className='text-white font-primarySemiBold '>
                             Join my mailing list
                         </div>
-                        <div className='flex'>
+                        <div className='flex gap-2'>
                             <input
                                 type="email"
                                 autocomplete="email"
