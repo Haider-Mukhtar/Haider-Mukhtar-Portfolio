@@ -53,25 +53,6 @@ const testimonials = [
     }
 ]
 
-// function SampleNextArrow(props) {
-//     const { className, style, onClick } = props;
-//     return (
-//         <div className={className} onClick={onClick}>
-//             <img src={rightArrow} />
-//         </div>
-//     );
-// }
-
-// function SamplePrevArrow(props) {
-//     const { className, style, onClick } = props;
-//     return (
-//         <div className={className} onClick={onClick}>
-//             <img src={leftArrow} />
-//         </div>
-//     );
-// }
-
-
 function Testimonials() {
 
     var settings = {
