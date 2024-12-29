@@ -59,7 +59,7 @@ function NewExperienceCards() {
           {experience.map((item) => (
             <div className="bg-blue-500 rounded-xl p-6 text-white drop-shadow-lg group hover:scale-105 duration-500 transition-all">
               <IoCodeSlashOutline className="size-8 group-hover:rotate-12 duration-500" />
-              <div className="font-primarySemiBold text-lg mt-2">{item.title}</div>
+              <div className="font-primarySemiBold text-xl mt-2">{item.title}</div>
               <div className="font-primaryRegular text-base">{item.organization}</div>
               <div className="flex justify-between items-center my-6">
                 <div className="font-primaryRegular text-sm text-blue-100">{item.level}</div>

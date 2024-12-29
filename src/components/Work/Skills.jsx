@@ -96,7 +96,7 @@ function Skills() {
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 my-10 gap-4'>
                     {   
                         skills.map((item) =>
-                            <div className='text-center rounded-2xl bg-blue-500 px-6 py-10 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-6px] hover:translate-y-[-6px] hover:rounded-md hover:shadow-[6px_6px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none flex flex-col justify-start items-center'>
+                            <div className='text-center rounded-xl bg-blue-500 px-6 py-10 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-6px] hover:translate-y-[-6px] hover:rounded-md hover:shadow-[6px_6px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none flex flex-col justify-start items-center'>
                                 <div>
                                     <img className='w-16 h-16 object-contain' src={item.image} />
                                 </div>

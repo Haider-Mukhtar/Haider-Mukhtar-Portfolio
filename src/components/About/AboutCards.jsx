@@ -19,11 +19,11 @@ function AboutCards() {
                                 Hi, I'm Haider.
                             </span> I build cool websites like this one.
                         </div>
-                        <div className='text-xl text-white font-primaryRegular'>
+                        <div className='text-lg text-white font-primaryRegular'>
                             <Link to='/contact'>
                                 <div className='flex flex-row items-center gap-1 font-primarySemiBold hover:underline hover:underline-offset-2'>
                                     Contact
-                                    <img className='w-6 h-6' src={arrowRight} />
+                                    <img className='size-5' src={arrowRight} />
                                 </div>
                             </Link>
                         </div>

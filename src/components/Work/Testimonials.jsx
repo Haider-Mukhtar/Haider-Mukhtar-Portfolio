@@ -1,13 +1,14 @@
 import React from 'react'
 import profilePic from './workAssets/profile.svg'
-import leftArrow from './workAssets/leftArrow.svg'
-import rightArrow from './workAssets/rightArrow.svg'
-import rightQuote from './workAssets/rightQuote.svg'
-import leftQuote from './workAssets/leftQuote.svg'
-import Slider from "react-slick";
+// import leftArrow from './workAssets/leftArrow.svg'
+// import rightArrow from './workAssets/rightArrow.svg'
+// import rightQuote from './workAssets/rightQuote.svg'
+// import leftQuote from './workAssets/leftQuote.svg'
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Marquee from "react-fast-marquee";
+import { CgQuote } from 'react-icons/cg'
 
 const testimonials = [
     {
@@ -88,10 +89,45 @@ function Testimonials() {
     };
 
     return (
-        <div className='bg-blue-500 flex justify-center'>
-            <div className='w-4/5 flex justify-center'>
-                <div className='md:w-11/12 w-full'>
-                    {/*
+        <div className="flex justify-center xl:mt-8 mt-8">
+            <div className="w-4/5 2xl:px-8 space-y-4">
+                <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+                What Clients Say About Me
+                </div>
+                <Marquee pauseOnHover autoFill gradient gradientColor='#fff' gradientWidth={25}>
+                    {
+                        testimonials.map((item) =>
+                            <div className='my-8 bg-blue-500 mx-4 w-72 sm:w-96 rounded-xl cursor-pointer hover:scale-105 duration-500 hover:drop-shadow-lg'>
+                                <CgQuote color='#ffffff' className='size-20' />
+                                <div className='px-6 text-white text-xl font-primaryRegular'>
+                                    {item.commit}
+                                </div>
+                                <div className='px-6 py-6 flex justify-between items-center'>
+                                    <div className='text-sm font-primaryRegular text-white'>
+                                        <p className='font-primarySemiBold'>{item.name}</p>
+                                        <p className='text-blue-100'>
+                                            {item.position} at {item.organization}
+                                        </p>
+                                    </div>
+                                    <div className='bg-white p-2 rounded-full'>
+                                        <img className='size-5' src={profilePic} />
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                </Marquee>
+            </div>
+        </div>
+
+    )
+}
+
+export default Testimonials
+
+
+
+{/*
                     <Slider {...settings}>
                         {
                             testimonials.map((item) =>
@@ -117,33 +153,8 @@ function Testimonials() {
                                 )
                             }
                             </Slider>
-                    */}
-                    <Marquee pauseOnHover autoFill>
-                        {
-                            testimonials.map((item) =>
-                                <div className='group my-10'>
-                                    <div className='space-y-4 py-4 bg-white rounded-3xl mx-4 w-72 sm:w-96 cursor-pointer group-hover:scale-105 duration-500 drop-shadow-2xl'>
-                                        <img className='w-10 ml-auto mr-auto' src={profilePic} />
-                                        <div className='flex flex-col justify-center items-center px-10'>
-                                            <div className='text-center text-blue-500 text-lg font-primaryRegular'>
-                                                {item.commit}
-                                            </div>
-                                            <div className='mt-4 text-xl font-bold text-blue-500 font-primaryBold'>
-                                                {item.name}
-                                            </div>
-                                            <div className=' text-lg text-blue-500 font-primarySemiBold'>
-                                                {item.position}
-                                            </div>
-                                            <div className=' text-lg text-blue-500 font-primaryRegular'>
-                                                {item.organization}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        }
-                    </Marquee>
-                    {/*
+*/}
+{/*
                         <Marquee pauseOnHover autoFill direction='right' className='mt-10'>
                             {
                                 testimonials.map((item) =>
@@ -167,11 +178,4 @@ function Testimonials() {
                                 )
                             }
                         </Marquee>
-                        */}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default Testimonials
+*/}
