@@ -5,10 +5,10 @@ import profilePic from './workAssets/profile.svg'
 // import rightQuote from './workAssets/rightQuote.svg'
 // import leftQuote from './workAssets/leftQuote.svg'
 // import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Marquee from "react-fast-marquee";
-import { CgQuote } from 'react-icons/cg'
+import { CgQuote } from 'react-icons/cg';
 
 const testimonials = [
     {
@@ -55,27 +55,13 @@ const testimonials = [
 
 function Testimonials() {
 
-    var settings = {
-        // dots: true,
-        infinite: true,
-        speed: 600,
-        // nextArrow: <SampleNextArrow />,
-        // prevArrow: <SamplePrevArrow />,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        pauseOnHover: true,
-    };
-
     return (
         <div className="flex justify-center xl:mt-8 mt-8">
             <div className="w-4/5 2xl:px-8 space-y-4">
                 <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
                 What Clients Say About Me
                 </div>
-                <Marquee pauseOnHover autoFill gradient gradientColor='#fff' gradientWidth={25}>
+                <Marquee pauseOnHover autoFill gradient gradientColor='#ffffff75' gradientWidth={25}>
                     {
                         testimonials.map((item) =>
                             <div className='my-8 bg-blue-500 mx-4 w-72 sm:w-96 rounded-xl cursor-pointer hover:scale-105 duration-500 hover:drop-shadow-lg'>

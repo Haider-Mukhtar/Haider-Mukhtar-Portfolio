@@ -13,7 +13,7 @@ function LetsTalk() {
           Let's Talk
         </div>
         <div className='flex justify-center items-center'>
-          <a href='#' className='group flex justify-center items-center'>
+          <a href='https://wa.me/+92344603782?text=Hello, How can I help you?' target='_blank' className='group flex justify-center items-center'>
             <img className='size-60 object-cover animate-spin animate-duration-[20000ms]' src={circle} />
             <div className='absolute flex flex-col justify-center items-center text-white font-primaryRegular text-2xl text-center'>
               <div>I'm</div>

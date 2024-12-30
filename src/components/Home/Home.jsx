@@ -10,6 +10,7 @@ import Projects from '../Projects/Projects'
 import AboutCards from '../About/AboutCards'
 import NewExperienceCards from '../Experience/NewExperienceCards'
 import LetsTalk from '../Contact/LetsTalk'
+import Hero from './Hero'
 // import { Experience1 } from '../Experience/Experience1'
 // import { YearOfExperience1 } from '../About/YearOfExperience1'
 
@@ -17,8 +18,9 @@ function Home() {
     return (
         <div className=''>
             {/*
-            */}
-            <Intro />
+                <Intro />
+                */}
+            <Hero />
             <Skills />
             <Projects />
             <YearOfExperience />
