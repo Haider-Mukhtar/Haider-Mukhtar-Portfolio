@@ -19,13 +19,13 @@ function Home() {
         <>
             {/*
                 <Intro />
+                <AboutCards />  
                 */}
             <Hero />
             <Skills />
             <Projects />
             <YearOfExperience />
             <NewExperienceCards />
-            <AboutCards />
             <Testimonials />
             <LetsTalk />
         </>

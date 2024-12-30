@@ -56,15 +56,15 @@ const testimonials = [
 function Testimonials() {
 
     return (
-        <div className="flex justify-center xl:mt-8 mt-8">
-            <div className="w-4/5 2xl:px-8 space-y-4">
+        <div className="flex justify-center py-14">
+            <div className="md:w-4/5 w-11/12 2xl:px-8">
                 <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
                 What Clients Say About Me
                 </div>
                 <Marquee pauseOnHover autoFill gradient gradientColor='#ffffff75' gradientWidth={25}>
                     {
                         testimonials.map((item) =>
-                            <div className='my-8 bg-blue-500 mx-4 w-72 sm:w-96 rounded-xl cursor-pointer hover:scale-105 duration-500 hover:drop-shadow-lg'>
+                            <div className='my-6 bg-blue-500 md:mx-4 mx-2 w-72 sm:w-96 rounded-xl cursor-pointer hover:scale-105 duration-500 hover:drop-shadow-lg'>
                                 <CgQuote color='#ffffff' className='size-20' />
                                 <div className='px-6 text-white text-xl font-primaryRegular'>
                                     {item.commit}

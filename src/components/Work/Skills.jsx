@@ -62,8 +62,8 @@ function Skills() {
     //     })
     // }
     return (
-        <div className='flex justify-center mt-8'>
-            <div className='w-4/5 2xl:px-8'>
+        <div className='flex justify-center py-14'>
+            <div className='md:w-4/5 w-11/12 2xl:px-8'>
                 <div className='text-5xl sm:text-5xl font-primaryBold text-center drop-shadow-2xl'>
                     My Works Skills
                 </div>
@@ -93,7 +93,7 @@ function Skills() {
                         repeat={Infinity}
                     />
                 </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 my-10 gap-4'>
+                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-4'>
                     {   
                         skills.map((item) =>
                             <div className='text-center rounded-xl bg-blue-500 px-6 py-10 font-semibold uppercase text-blue-500 transition-all duration-300 hover:translate-x-[-6px] hover:translate-y-[-6px] hover:rounded-md hover:shadow-[6px_6px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none flex flex-col justify-start items-center'>

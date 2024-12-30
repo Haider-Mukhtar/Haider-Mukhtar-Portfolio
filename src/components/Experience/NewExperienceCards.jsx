@@ -1,5 +1,6 @@
 import React from "react";
 import { IoCodeSlashOutline } from "react-icons/io5";
+import { GoDotFill } from "react-icons/go";
 
 const experience = [
   {
@@ -50,8 +51,8 @@ const experience = [
 
 function NewExperienceCards() {
   return (
-    <div className="flex justify-center xl:mt-8 mt-8">
-      <div className="w-4/5 2xl:px-8 space-y-4">
+    <div className="flex justify-center py-14">
+      <div className="md:w-4/5 w-11/12 2xl:px-8 space-y-6">
         <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
           Work Experience
         </div>
@@ -65,10 +66,10 @@ function NewExperienceCards() {
                 <div className="font-primaryRegular text-sm text-blue-100">{item.level}</div>
                 <div className="font-primaryRegular text-sm text-blue-100">{item.sTime} - {item.eTime}</div>
               </div>
-              <ul className="font-primaryRegular text-sm text-blue-100">
-                <li>- {item.detail1}</li>
-                <li>- {item.detail2}</li>
-                <li>- {item.detail3}</li>
+              <ul className="font-primaryRegular text-sm text-blue-100 list-disc ml-4">
+                <li className="mt-2">{item.detail1}</li>
+                <li className="mt-2">{item.detail2}</li>
+                <li className="mt-2">{item.detail3}</li>
               </ul>
             </div>
           ))}

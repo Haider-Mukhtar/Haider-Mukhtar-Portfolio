@@ -25,7 +25,7 @@ function Navbar() {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='flex justify-between items-center w-4/5 2xl:px-8 py-6'>
+                <div className='flex justify-between items-center md:w-4/5 w-11/12 2xl:px-8 md:py-6 py-3'>
                     <Link to='/' >
                         {/*
                         <img className='h-14' src={myPic} alt='Profile Pic' />
@@ -49,7 +49,7 @@ function Navbar() {
                     </ul>
                     <div className='lg:hidden block mt-auto'>
                         <button className='px-1' onClick={handelDropdown}>
-                            <img className='h-10' src={menuIcon} />
+                            <img className='h-7' src={menuIcon} />
                         </button>
                     </div>
                 </div>

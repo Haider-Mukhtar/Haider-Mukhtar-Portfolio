@@ -7,6 +7,8 @@ import sendIcon from "./footerAssets/sendIcon.svg"
 import facebook from "./footerAssets/facebook.svg"
 // import phone from "./footerAssets/phone.svg";
 // import email from "./footerAssets/email.svg";
+import download from './footerAssets/download.svg'
+import myCV from './footerAssets/HaiderMukhtar_CV.pdf'
 
 function Footer1() {
 
@@ -29,7 +31,7 @@ function Footer1() {
 
     return (
         <div className="bg-blue-500 flex justify-center items-center flex-col">
-            <div className="w-4/5 py-6 grid md:grid-cols-2 gap-6">
+            <div className="md:w-4/5 w-11/12 py-6 grid md:grid-cols-2 gap-6">
                 <div className='space-y-2'>
                     <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
                         HM.
@@ -120,15 +122,22 @@ function Footer1() {
                         </a>
                         <a
                             href="https://github.com/Haider-Mukhtar"
-                            target="_blank"
+                            target="_blank" 
                             className="hover:transition-transform hover:scale-110"
                         >
                             <img className="h-6 w-6" src={github} />
                         </a>
+                        <a
+                            href={myCV}
+                            target="_blank"
+                            className="hover:transition-transform hover:scale-110"
+                        >
+                            <img className="h-6 w-6" src={download} alt='Download CV' />
+                        </a>
                     </div>
                 </div>
             </div>
-            <div className="text-center py-6 text-white text-sm font-primaryRegular w-4/5 border-t-2">
+            <div className="text-center py-5 text-white border-white/50 text-xs font-primaryRegular w-4/5 border-t-[1px]">
                 @2025 HaiderMukhtar. All rights reserved.
             </div>
         </div>

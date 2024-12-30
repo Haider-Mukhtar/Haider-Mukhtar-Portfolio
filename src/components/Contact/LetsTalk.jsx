@@ -6,13 +6,15 @@ import { Magnetic } from '../ui/magnetic';
 function LetsTalk() {
   const springOptions = { bounce: 0.2 };
   return (
-    <div className="flex justify-center xl:my-8 my-8">
-      <div className="w-4/5 2xl:px-8 space-y-4">
-        <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
-          Anything in Mind?
-        </div>
-        <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
-          Let's Talk
+    <div className="flex justify-center py-14">
+      <div className="md:w-4/5 w-11/12 2xl:px-8 space-y-6">
+        <div className='space-y-3'>
+          <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+            Anything in Mind?
+          </div>
+          <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+            Let's Talk
+          </div>
         </div>
         <div className='flex justify-center items-center'>
           <Magnetic
