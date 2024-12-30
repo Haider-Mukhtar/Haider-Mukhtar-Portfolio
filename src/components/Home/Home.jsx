@@ -16,7 +16,7 @@ import Hero from './Hero'
 
 function Home() {
     return (
-        <div className=''>
+        <>
             {/*
                 <Intro />
                 */}
@@ -28,7 +28,7 @@ function Home() {
             <AboutCards />
             <Testimonials />
             <LetsTalk />
-        </div>
+        </>
     )
 }
 

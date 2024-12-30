@@ -1,14 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router'
 import linkedin from "./footerAssets/linkedin.svg";
 import github from "./footerAssets/github.svg";
 import instagram from "./footerAssets/instagram.svg";
 import sendIcon from "./footerAssets/sendIcon.svg"
 import facebook from "./footerAssets/facebook.svg"
-import phone from "./footerAssets/phone.svg";
-import email from "./footerAssets/email.svg";
+// import phone from "./footerAssets/phone.svg";
+// import email from "./footerAssets/email.svg";
 
 function Footer1() {
+
+    const [email, setEmail] = useState('')
+    // console.log(email)
+    const [emailError, setEmailError] = useState(false)
+    const handleSend = () => {
+        if (email === '') {
+            setEmailError(true)
+        }
+        else {
+            const myEmail = "haidermukhtarch405@gmail.com";
+
+            const emailLink = `mailto:${myEmail}?subject=Hi there!&body=Hi Haider, how are you doing?&from=${email}`;
+            window.location.href = emailLink;
+            setEmailError(false)
+            setEmail('')
+        }
+    }
+
     return (
         <div className="bg-blue-500 flex justify-center items-center flex-col">
             <div className="w-4/5 py-6 grid md:grid-cols-2 gap-6">
@@ -68,10 +86,12 @@ function Footer1() {
                             <input
                                 type="email"
                                 autocomplete="email"
+                                value={email}
+                                onChange={(txt) => setEmail(txt.target.value)}
                                 placeholder="Enter your email"
-                                className="w-full border bg-blue-500 px-2 rounded-md py-1.5 transition-colors focus:border-blue-300 focus:outline-0 placeholder-white font-primaryRegular text-white"
+                                className={`${emailError ? 'border-red-500' : 'border-white'} w-full border  bg-blue-500 px-2 rounded-md py-1.5 transition-colors focus:border-blue-300 focus:outline-0 placeholder-white font-primaryRegular text-white`}
                             />
-                            <button className='bg-white flex justify-center items-center border-b p-2 rounded-md'>
+                            <button onClick={handleSend} className='bg-white flex justify-center items-center border-b p-2 rounded-md'>
                                 <img className='w-6 h-6' src={sendIcon} />
                             </button>
                         </div>

@@ -61,7 +61,7 @@ function Intro() {
                             </div>
                         </div>
                         <div>
-                            <p className='text-black font-primaryRegular text-base'>
+                            <p className='text-black font-primaryRegular text-base text-center py-4'>
                                 Frontend Developer specializing in building engaging user interfaces with HTML, CSS (Tailwind CSS), React, and React Native for web and mobile applications. Demonstrated ability to deliver user-friendly solutions through internships and academic projects. Strong problem-solving skills, innovative thinking, and dedication to ongoing learning and professional development.
                             </p>
                         </div>

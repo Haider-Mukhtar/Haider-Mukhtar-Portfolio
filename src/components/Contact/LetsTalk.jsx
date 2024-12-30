@@ -1,8 +1,10 @@
 import React from 'react'
 import circle from './contactAssets/circle.png'
 import { FaArrowRight } from "react-icons/fa6";
+import { Magnetic } from '../ui/magnetic';
 
 function LetsTalk() {
+  const springOptions = { bounce: 0.2 };
   return (
     <div className="flex justify-center xl:my-8 my-8">
       <div className="w-4/5 2xl:px-8 space-y-4">
@@ -13,14 +15,33 @@ function LetsTalk() {
           Let's Talk
         </div>
         <div className='flex justify-center items-center'>
-          <a href='https://wa.me/+92344603782?text=Hello, How can I help you?' target='_blank' className='group flex justify-center items-center'>
-            <img className='size-60 object-cover animate-spin animate-duration-[20000ms]' src={circle} />
-            <div className='absolute flex flex-col justify-center items-center text-white font-primaryRegular text-2xl text-center'>
-              <div>I'm</div>
-              <div>Ready to Talk</div>
-              <FaArrowRight className='mt-4 size-10 group-hover:-rotate-12 duration-300' />
+          <Magnetic
+            intensity={0.4}
+            springOptions={springOptions}
+            actionArea='global'
+            range={200}
+          >
+            <div
+              type='button'
+              className='inline-flex items-cente transition-all duration-200'
+            >
+              <Magnetic
+                intensity={0.1}
+                springOptions={springOptions}
+                actionArea='global'
+                range={200}
+              >
+                <a href='https://wa.me/+92344603782?text=Hello, How can I help you?' target='_blank' className='group flex justify-center items-center'>
+                  <img className='size-60 object-cover animate-spin animate-duration-[20000ms]' src={circle} />
+                  <div className='absolute flex flex-col justify-center items-center text-white font-primaryRegular text-2xl text-center'>
+                    <div>I'm</div>
+                    <div>Ready to Talk</div>
+                    <FaArrowRight className='mt-4 size-10 group-hover:-rotate-12 duration-300' />
+                  </div>
+                </a>
+              </Magnetic>
             </div>
-          </a>
+          </Magnetic>
         </div>
       </div>
     </div>

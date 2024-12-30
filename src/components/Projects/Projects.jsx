@@ -58,13 +58,13 @@ function Projects() {
                     {
                         projects.map((item) =>
                             <div className='w-full col-span-1 bg-black relative rounded-xl overflow-hidden flex items-center justify-center group hover:shadow-lg transition-shadow'>
-                                <img className='size-full object-cover aspect-[9/16] group-hover:opacity-50' alt="project-image" src={item.image} />
+                                <img className='size-full object-cover md:aspect-[9/16] sm:aspect-[9/12] aspect-[9/10] group-hover:opacity-50' alt="project-image" src={item.image} />
                                 <div className='group-hover:flex hidden w-full h-full absolute inset-0 flex-col items-end justify-end bg-gradient-to-t from-blue-500 via-transparent to-transparent'>
                                     <div className='w-full flex flex-col items-center justify-center p-3.5 gap-3.5'>
                                         <div className='w-full flex items-center justify-center'>
                                             <span className='flex-1 text-left text-xl text-white font-bold font-primaryBold'>{item.name}</span>
                                             <div className='flex items-center justify-center gap-1.5'>
-                                                <a href={item.github} target='_blank'>
+                                                <a href={item.github} target='_blank' className='group'>
                                                 <FaGithub className='size-9 bg-white p-2 rounded-full'/>
                                                 </a>
                                                 <a href={item.url} target='_blank'>
