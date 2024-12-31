@@ -4,7 +4,7 @@ import arrowRight from './aboutAssets/rightArrow.svg'
 import github from './aboutAssets/github.svg'
 import linkedin from './aboutAssets/linkedin.svg'
 import instagram from './aboutAssets/instagram.svg'
-import myCV from './aboutAssets/HaiderMukhtar_CV.pdf'
+// import myCV from './aboutAssets/HaiderMukhtar_CV.pdf'
 import { Link } from 'react-router'
 
 function AboutCards() {
