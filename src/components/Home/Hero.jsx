@@ -17,7 +17,7 @@ function Hero() {
           </div>
         </div>
         <div className='flex flex-col justify-center items-center'>
-          <div className='text-5xl font-primaryBold font-bold text-center'>
+          <div className='text-4xl sm:text-5xl font-primaryBold font-bold text-center'>
             I'm Haider Mukhtar
           </div>
           <div className='text-3xl font-primarySemiBold font-semibold mt-2 text-center text-blue-600'>

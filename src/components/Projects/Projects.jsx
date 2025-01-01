@@ -51,7 +51,7 @@ function Projects() {
     return (
         <div className='flex justify-center py-14'>
             <div className='md:w-4/5 w-11/12 2xl:px-8'>
-                <div className='text-5xl sm:text-5xl font-semibold font-primaryBold text-center'>
+                <div className='text-4xl sm:text-5xl font-semibold font-primaryBold text-center'>
                     My Projects
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-6 gap-6'>

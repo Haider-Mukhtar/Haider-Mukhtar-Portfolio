@@ -87,7 +87,7 @@ function Footer1() {
                         <div className='flex gap-2'>
                             <input
                                 type="email"
-                                autocomplete="email"
+                                autoComplete="email"
                                 value={email}
                                 onChange={(txt) => setEmail(txt.target.value)}
                                 placeholder="Enter your email"

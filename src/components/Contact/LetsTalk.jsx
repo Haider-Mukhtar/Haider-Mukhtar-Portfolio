@@ -9,10 +9,10 @@ function LetsTalk() {
     <div className="flex justify-center py-14">
       <div className="md:w-4/5 w-11/12 2xl:px-8 space-y-6">
         <div className='space-y-3'>
-          <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+          <div className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">
             Anything in Mind?
           </div>
-          <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+          <div className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">
             Let's Talk
           </div>
         </div>

@@ -20,7 +20,7 @@ const testimonials = [
         "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
-        "id": 1,
+        "id": 2,
         "profileImage": profilePic,
         "name": "Muaaz Ahmad",
         "organization": "MikroStar Tech",
@@ -28,7 +28,7 @@ const testimonials = [
         "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
-        "id": 1,
+        "id": 3,
         "profileImage": profilePic,
         "name": "Muaaz Ahmad",
         "organization": "MikroStar Tech",
@@ -36,7 +36,7 @@ const testimonials = [
         "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
-        "id": 1,
+        "id": 4,
         "profileImage": profilePic,
         "name": "Muaaz Ahmad",
         "organization": "MikroStar Tech",
@@ -44,7 +44,7 @@ const testimonials = [
         "commit": "Collaborating with Haider Mukhtar on React Native Mobile App Development brings, unparalleled expertise, efficiency and creativity to every project."
     },
     {
-        "id": 1,
+        "id": 5,
         "profileImage": profilePic,
         "name": "Muaaz Ahmad",
         "organization": "MikroStar Tech",
@@ -58,7 +58,7 @@ function Testimonials() {
     return (
         <div className="flex justify-center py-14">
             <div className="md:w-4/5 w-11/12 2xl:px-8">
-                <div className="text-5xl sm:text-5xl font-semibold text-center font-primaryBold">
+                <div className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">
                 What Clients Say About Me
                 </div>
                 <Marquee pauseOnHover autoFill gradient gradientColor='#ffffff75' gradientWidth={25}>
