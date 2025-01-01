@@ -23,7 +23,7 @@ function Navbar() {
     }
 
     return (
-        <>
+        <nav>
             <div className='flex justify-center'>
                 <div className='flex justify-between items-center md:w-4/5 w-11/12 2xl:px-8 md:py-6 py-3'>
                     <Link to='/' >
@@ -75,7 +75,7 @@ function Navbar() {
                     </div>
                     : null
             }
-        </>
+        </nav>
     )
 }
 
