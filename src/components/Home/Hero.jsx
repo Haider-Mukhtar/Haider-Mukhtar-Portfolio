@@ -9,8 +9,8 @@ import { Link } from 'react-router'
 
 function Hero() {
   return (
-    <div className="flex justify-center lg:mt-4 mb-10">
-      <div className="md:w-4/5 w-11/12 2xl:px-8 space-y-4">
+    <div className="flex justify-center pt-24">
+      <div className="lg:w-4/5 w-11/12 2xl:px-8 space-y-4">
         <div className='flex justify-center items-center'>
           <div className='bg-gradient-to-tr from-blue-500 via-blue-300 to-blue-500 drop-shadow-2xl shadow-blue-500 rounded-full hover:scale-100 duration-700 motion-preset-pop motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate '>
             <img className='rounded-full object-cver size-72 sm:size-80 lg:size-96' src={myPic} alt='Profile Pic' />
@@ -37,7 +37,7 @@ function Hero() {
               repeat={Infinity}
             />
           </div>
-          <div className='flex my-10 gap-3 justify-center items-center'>
+          <div className='flex mt-10 gap-3 justify-center items-center'>
             <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 py-1 pl-3 pr-1 rounded-full hover:transition-transform hover:scale-105 drop-shadow-xl'>
               <div className='text-lg capitalize font-primarySemiBold text-white mr-2'>
                 hire me

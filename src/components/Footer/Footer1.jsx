@@ -31,7 +31,7 @@ function Footer1() {
 
     return (
         <footer className="bg-blue-500 flex justify-center items-center flex-col">
-            <div className="md:w-4/5 w-11/12 py-6 grid md:grid-cols-2 gap-6">
+            <div className="lg:w-4/5 w-11/12 py-6 grid md:grid-cols-2 gap-6">
                 <div className='space-y-2'>
                     <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
                         HM.
@@ -142,7 +142,7 @@ function Footer1() {
                     </div>
                 </div>
             </div>
-            <div className="text-center py-5 text-white border-white/50 text-xs font-primaryRegular w-4/5 border-t-[1px]">
+            <div className="text-center py-5 text-white border-white/50 text-xs font-primaryRegular lg:w-4/5 w-11/12 border-t-[1px]">
                 @2025 HaiderMukhtar. All rights reserved.
             </div>
         </footer>

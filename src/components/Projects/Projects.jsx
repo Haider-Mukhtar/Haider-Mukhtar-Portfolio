@@ -50,7 +50,7 @@ const projects = [
 function Projects() {
     return (
         <div className='flex justify-center py-14'>
-            <div className='md:w-4/5 w-11/12 2xl:px-8'>
+            <div className='lg:w-4/5 w-11/12 2xl:px-8'>
                 <div className='text-4xl sm:text-5xl font-semibold font-primaryBold text-center'>
                     My Projects
                 </div>
@@ -58,7 +58,7 @@ function Projects() {
                     {
                         projects.map((item) =>
                             <div className='w-full col-span-1 bg-black relative rounded-xl overflow-hidden flex items-center justify-center group hover:shadow-lg transition-shadow'>
-                                <img className='size-full object-cover md:aspect-[9/16] sm:aspect-[9/12] aspect-[9/10] group-hover:opacity-50' alt="project-image" src={item.image} />
+                                <img className='size-full object-cover lg:aspect-[9/16] md:aspect-[9/13] sm:aspect-[9/12] aspect-[9/10] group-hover:opacity-50' alt="project-image" src={item.image} />
                                 <div className='group-hover:flex hidden w-full h-full absolute inset-0 flex-col items-end justify-end bg-gradient-to-t from-blue-500 via-transparent to-transparent'>
                                     <div className='w-full flex flex-col items-center justify-center p-3.5 gap-3.5'>
                                         <div className='w-full flex items-center justify-center'>

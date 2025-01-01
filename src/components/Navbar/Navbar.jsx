@@ -23,23 +23,23 @@ function Navbar() {
     }
 
     return (
-        <nav>
+        <nav className='w-full fixed top-0 left-0 z-50 bg-white/50 backdrop-blur-sm'>
             <div className='flex justify-center'>
-                <div className='flex justify-between items-center md:w-4/5 w-11/12 2xl:px-8 md:py-6 py-3'>
+                <div className='flex justify-between items-center lg:w-4/5 w-11/12 h-16'>
                     <Link to='/' >
                         {/*
                         <img className='h-14' src={myPic} alt='Profile Pic' />
                         */}
                         <div className='text-3xl font-primaryBold text-blue-500 drop-shadow-2xl'>HM.</div>
                     </Link>
-                    <ul className='lg:flex gap-4 hidden'>
+                    <ul className='md:flex gap-4 hidden'>
                         {links.map((link) => (
                             <li>
                                 <Link
                                     to={link.path}
                                     className={
                                         `${location.pathname === link.path ? 'text-white' : 'text-black'} 
-                                        ${location.pathname === link.path ? 'bg-blue-500' : 'bg-white'}
+                                        ${location.pathname === link.path ? 'bg-blue-500' : 'bg-transparent'}
                                          hover:bg-blue-100 hover:text-black font-primaryRegular py-2 px-4 rounded-lg`}
                                 >
                                     {link.name}
@@ -47,31 +47,23 @@ function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <div className='lg:hidden block mt-auto'>
-                        <button className='px-1' onClick={handelDropdown}>
-                            <img className='h-7' src={menuIcon} />
-                        </button>
-                    </div>
+                    <button className='md:hidden block' onClick={handelDropdown}>
+                        <img className='size-5' src={menuIcon} />
+                    </button>
                 </div>
             </div>
             {
                 showDropdown ?
-                    <div className='flex justify-center py-6'>
-                        <div className='bg-white w-4/5'>
-                            <ul className='flex flex-col justify-center items-center gap-6'>
-                                {links.map((link) => (
-                                    <li>
-                                        <Link
-                                            to={link.path}
-                                            className={
-                                                `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} ${location.pathname === link.path ? 'underline underline-offset-2' : 'no-underline' } hover:text-blue-700 hover:underline hover:underline-offset-2 font-primaryRegular`}
-                                        >
-                                            {link.name}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                    <div className='flex flex-col justify-center w-full px-4 pb-3 rounded-md bg-white/50 backdrop-blur-sm'>
+                        {links.map((link) => (
+                            <Link
+                                to={link.path}
+                                className={
+                                    `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} ${location.pathname === link.path ? 'bg-blue-100' : 'bg-transparent'} py-2 px-2 rounded-lg hover:text-blue-700 font-primaryRegular w-full text-left`}
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
                     </div>
                     : null
             }

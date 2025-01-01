@@ -14,7 +14,7 @@ function YearOfExperience() {
     const [startCount, setStartCount] = useState(false)
 
     return (
-        <div className="flex justify-center py-14 my-14  bg-blue-500">
+        <div className="flex justify-center py-14 my-10  bg-blue-500">
             <div className="md:w-4/5 w-11/12 px-6 lg:px-8 ">
                 <ScrollTrigger onEnter={() => setStartCount(true)} onExit={() => setStartCount(false)}>
                     <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:grid-cols-4">
