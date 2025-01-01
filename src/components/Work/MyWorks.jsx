@@ -12,10 +12,12 @@ function MyWorks() {
   return (
     <>
         <Navbar />
+        <div className='pt-16'>
         <Skills />
         <Projects />
         <Testimonials />
         <LetsTalk />
+        </div>
         <Footer1 />
     </>
   )

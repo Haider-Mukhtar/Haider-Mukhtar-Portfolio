@@ -6,7 +6,7 @@ import { Magnetic } from '../ui/magnetic';
 function LetsTalk() {
   const springOptions = { bounce: 0.2 };
   return (
-    <div className="flex justify-center py-14 mt-16">
+    <div className="flex justify-center py-14">
       <div className="lg:w-4/5 w-11/12 2xl:px-8 space-y-6">
         <div className='space-y-3'>
           <div className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">

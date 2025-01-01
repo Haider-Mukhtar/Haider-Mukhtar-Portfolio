@@ -8,9 +8,11 @@ import LetsTalk from './LetsTalk'
 function Contact() {
   return (
     <div>
-        <Navbar />
+      <Navbar />
+      <div className='pt-16'>
         <LetsTalk />
-        <Footer1 />
+      </div>
+      <Footer1 />
     </div>
   )
 }

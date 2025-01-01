@@ -23,7 +23,7 @@ function Navbar() {
     }
 
     return (
-        <nav className='w-full fixed top-0 left-0 z-50 bg-white/50 backdrop-blur-sm'>
+        <nav className='w-full fixed top-0 left-0 z-50 bg-white/50 backdrop-blur-sm h-16'>
             <div className='flex justify-center'>
                 <div className='flex justify-between items-center lg:w-4/5 w-11/12 h-16'>
                     <Link to='/' >
@@ -47,7 +47,7 @@ function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <button className='md:hidden block' onClick={handelDropdown}>
+                    <button className={`md:hidden block ${showDropdown ? 'bg-blue-100' : 'bg-transparent'} p-1.5 rounded-md`} onClick={handelDropdown}>
                         <img className='size-5' src={menuIcon} />
                     </button>
                 </div>

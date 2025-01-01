@@ -12,7 +12,9 @@ function MyExperience() {
     return (
         <>
             <Navbar />
-            <NewExperienceCards />
+            <div className='pt-16'>
+                <NewExperienceCards />
+            </div>
             <Testimonial />
             <LetsTalk />
             <Footer1 />
