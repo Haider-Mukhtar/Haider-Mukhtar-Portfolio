@@ -36,7 +36,7 @@ function Footer1() {
                     <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
                         HM.
                     </Link>
-                    <ul className="font-primaryRegular grid grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-3 grid-flow-row">
+                    <ul className="font-primaryRegular grid grid-cols-3 gap-1 lg:flex lg:gap-4">
                         <li>
                             <Link
                                 to="/"
@@ -102,34 +102,39 @@ function Footer1() {
                         <a
                             href="https://www.facebook.com/chhaidermukhtar880"
                             target="_blank"
+                            title='Facebook'
                             className="hover:transition-transform hover:scale-110"
                         >
-                            <img className="h-6 w-6" src={facebook} />
+                            <img className="h-6 w-6" src={facebook} alt='Facebook' />
                         </a>
                         <a
                             href="https://www.instagram.com/haider_mukhtar_ch/"
                             target="_blank"
+                            title='Instagram'
                             className="hover:transition-transform hover:scale-110"
                         >
-                            <img className="h-6 w-6" src={instagram} />
+                            <img className="h-6 w-6" src={instagram} alt='Instagram' />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/haider-mukhtar/"
                             target="_blank"
+                            title='LinkedIn'
                             className="hover:transition-transform hover:scale-110"
                         >
-                            <img className="h-6 w-6" src={linkedin} />
+                            <img className="h-6 w-6" src={linkedin} alt='LinkedIn' />
                         </a>
                         <a
                             href="https://github.com/Haider-Mukhtar"
                             target="_blank" 
+                            title='Github'
                             className="hover:transition-transform hover:scale-110"
                         >
-                            <img className="h-6 w-6" src={github} />
+                            <img className="h-6 w-6" src={github} alt='Github' />
                         </a>
                         <a
                             href={myCV}
                             target="_blank"
+                            title='Download CV'
                             className="hover:transition-transform hover:scale-110"
                         >
                             <img className="h-6 w-6" src={download} alt='Download CV' />
