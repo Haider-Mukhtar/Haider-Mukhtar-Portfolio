@@ -36,7 +36,7 @@ function Footer1() {
                     <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
                         HM.
                     </Link>
-                    <ul className="font-primaryRegular flex gap-3">
+                    <ul className="font-primaryRegular grid grid-cols-3 lg:grid-cols-5 gap-1 lg:gap-3 grid-flow-row">
                         <li>
                             <Link
                                 to="/"
