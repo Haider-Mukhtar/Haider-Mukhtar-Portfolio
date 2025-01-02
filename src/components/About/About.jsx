@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
-import Education from './Education'
+// import Navbar from '../Navbar/Navbar'
+// import Education from './Education'
 // import Experience from './Experience'
 // import Footer from '../Footer/Footer'
 // import YearOfExperience from './YearOfExperience'
@@ -9,11 +9,12 @@ import Education from './Education'
 import AboutCards from './AboutCards'
 import Footer1 from '../Footer/Footer1'
 import LetsTalk from '../Contact/LetsTalk'
+import NewNavbar from '../Navbar/NewNavbar'
 
 function About() {
   return (
     <>
-        <Navbar />
+        <NewNavbar />
         <AboutCards />
         <LetsTalk />
         <Footer1 />

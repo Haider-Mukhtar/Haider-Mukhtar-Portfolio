@@ -4,12 +4,13 @@ import Navbar from '../Navbar/Navbar'
 // import Footer from '../Footer/Footer'
 import Footer1 from '../Footer/Footer1'
 import LetsTalk from './LetsTalk'
+import NewNavbar from '../Navbar/NewNavbar'
 
 function Contact() {
   return (
     <div>
-      <Navbar />
-      <div className='pt-16'>
+      <NewNavbar />
+      <div className='pt-4'>
         <LetsTalk />
       </div>
       <Footer1 />

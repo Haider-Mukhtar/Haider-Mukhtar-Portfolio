@@ -1,5 +1,5 @@
 import React from 'react'
-import Intro from './Intro'
+// import Intro from './Intro'
 import Skills from '../Work/Skills'
 import YearOfExperience from '../About/YearOfExperience'
 import Testimonials from '../Work/Testimonials'
