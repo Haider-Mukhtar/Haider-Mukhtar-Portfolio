@@ -58,9 +58,9 @@ function Testimonials() {
     return (
         <div className="flex justify-center py-14 bg-gray-100">
             <div className="lg:w-4/5 w-11/12 2xl:px-8">
-                <div className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">
+                <h1 className="text-4xl sm:text-5xl font-semibold text-center font-primaryBold">
                 What Clients Say About Me
-                </div>
+                </h1>
                 <Marquee pauseOnHover autoFill gradient gradientColor='#ffffff75' gradientWidth={25}>
                     {
                         testimonials.map((item) =>

@@ -12,6 +12,14 @@ import myCV from './footerAssets/HaiderMukhtar_CV.pdf'
 
 function Footer1() {
 
+    const links = [
+        { name: 'Home', path: '/' },
+        // { name: 'About Me', path: '/about' },
+        { name: 'Experience', path: '/myexperience' },
+        { name: 'Works', path: '/myworks' },
+        { name: 'Hire Me', path: '/contact' },
+    ];
+
     const [email, setEmail] = useState('')
     // console.log(email)
     const [emailError, setEmailError] = useState(false)
@@ -36,69 +44,37 @@ function Footer1() {
                     <Link to='/' className='text-3xl font-primaryBold text-white drop-shadow-2xl'>
                         HM.
                     </Link>
-                    <ul className="font-primaryRegular grid grid-cols-3 gap-1 lg:flex lg:gap-4">
-                        <li>
-                            <Link
-                                to="/"
-                                className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/about"
-                                className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
-                            >
-                                About Me
-                            </Link>
-                        </li>
-                        <li>
-                            <a
-                                href="/myexperience"
-                                className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
-                            >
-                                My Experience
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="/myworks"
-                                className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
-                            >
-                                My Work
-                            </a>
-                        </li>
-                        <li>
-                            <Link
-                                to="/contact"
-                                className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
-                            >
-                                Hire Me
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className='space-y-6'>
-                    <div className='space-y-2'>
-                        <div className='text-white font-primarySemiBold '>
-                            Join my mailing list
-                        </div>
-                        <div className='flex gap-2'>
-                            <input
-                                type="email"
-                                autoComplete="email"
-                                value={email}
-                                onChange={(txt) => setEmail(txt.target.value)}
-                                placeholder="Enter your email"
-                                className={`${emailError ? 'border-red-500' : 'border-white'} w-full border  bg-blue-500 px-2 rounded-md py-1.5 transition-colors focus:border-blue-300 focus:outline-0 placeholder-white font-primaryRegular text-white`}
-                            />
-                            <button onClick={handleSend} className='bg-white flex justify-center items-center border-b p-2 rounded-md'>
-                                <img className='w-6 h-6' src={sendIcon} />
-                            </button>
-                        </div>
+                    <div className="font-primaryRegular flex gap-5">
+                        {
+                            links.map((link) => (
+                                <Link
+                                    to={link.path}
+                                    className="text-white text-sm font-primaryRegular hover:underline hover:underline-offset-2"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))
+                        }
                     </div>
-                    <div className="flex flex-row gap-6">
+                </div>
+                <div className=''>
+                    <label className='text-white font-primarySemiBold '>
+                        Join my mailing list
+                    </label>
+                    <div className='flex gap-2 mt-2'>
+                        <input
+                            type="email"
+                            autoComplete="email"
+                            value={email}
+                            onChange={(txt) => setEmail(txt.target.value)}
+                            placeholder="Enter your email"
+                            className={`${emailError ? 'border-red-500' : 'border-white'} w-full border  bg-blue-500 px-2 rounded-md py-1.5 transition-colors focus:border-blue-300 focus:outline-0 placeholder-white font-primaryRegular text-white`}
+                        />
+                        <button onClick={handleSend} className='bg-white flex justify-center items-center border-b p-2 rounded-md'>
+                            <img className='w-6 h-6' src={sendIcon} />
+                        </button>
+                    </div>
+                    <div className="flex flex-row gap-5 mt-6">
                         <a
                             href="https://www.facebook.com/chhaidermukhtar880"
                             target="_blank"
@@ -125,7 +101,7 @@ function Footer1() {
                         </a>
                         <a
                             href="https://github.com/Haider-Mukhtar"
-                            target="_blank" 
+                            target="_blank"
                             title='Github'
                             className="hover:transition-transform hover:scale-110"
                         >

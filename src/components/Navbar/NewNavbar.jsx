@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router';
 
 function NewNavbar() {
@@ -14,7 +14,7 @@ function NewNavbar() {
   ];
 
   return (
-    <nav className='my-1 h-12 w-full flex justify-center items-center fixed z-50'>
+    <nav className='my-2 h-12 w-full flex justify-center items-center fixed z-50 drop-shadow-lg'>
       <div className='rounded-md p-1 space-x-1 bg-blue-300/50 backdrop-blur-sm flex justify-center items-center'>
         {
           links.map((link) => (

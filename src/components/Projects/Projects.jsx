@@ -51,9 +51,9 @@ function Projects() {
     return (
         <div className='flex justify-center py-14'>
             <div className='lg:w-4/5 w-11/12 2xl:px-8'>
-                <div className='text-4xl sm:text-5xl font-semibold font-primaryBold text-center'>
+                <h1 className='text-4xl sm:text-5xl font-semibold font-primaryBold text-center'>
                     My Projects
-                </div>
+                </h1>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mt-6 gap-6'>
                     {
                         projects.map((item) =>
@@ -78,24 +78,6 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-                            // <a href={item.url} target="_blank" className='bg-blue-500 flex flex-col rounded-3xl hover:scale-105 ease-in-out duration-700 drop-shadow-xl space-y-3 group'>
-                            //     <div className='rounded-t-3xl'>
-                            //         <img className='w-full h-auto rounded-t-3xl object-contain' src={item.image} />
-                            //     </div>
-                            //     <div className='flex flex-col px-6 pb-6 h-full space-y-3 justify-between'>
-                            //         <div className='space-y-3'>
-                            //             <div className='text-xl text-white font-primarySemiBold'>
-                            //                 {item.category}
-                            //             </div>
-                            //             <div className='text-2xl font-primaryBold font-semibold text-white'>
-                            //                 {item.name}
-                            //             </div>
-                            //             <div className='text-md text-white line-clamp-5 font-primaryRegular'>
-                            //                 {item.detail}
-                            //             </div>
-                            //         </div>
-                            //     </div>
-                            // </a>
                         )
                     }
                 </div>
