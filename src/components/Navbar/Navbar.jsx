@@ -63,14 +63,14 @@ function Navbar() {
             </div>
             {
                 showDropdown ?
-                    <div className='flex flex-col justify-center w-full px-4 pb-3 rounded-b-md bg-white/50 backdrop-blur-sm'>
+                    <div className='flex flex-col w-full px-4 pb-3 rounded-b-md bg-white/50 backdrop-blur-sm'>
                         {links.map((link) => (
                             <Link
                                 to={link.path}
                                 className={
                                     `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} 
                                     ${location.pathname === link.path ? 'bg-blue-100' : 'bg-transparent'} 
-                                    py-2 px-2 rounded-lg font-primaryRegular w-full text-left`}
+                                    py-2 px-2 rounded-md font-primaryRegular w-full text-left`}
                             >
                                 {link.name}
                             </Link>
