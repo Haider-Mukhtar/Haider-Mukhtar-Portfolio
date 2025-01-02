@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import myPic from './navAssets/pic.png'
 import menuIcon from './navAssets/menuIcon.svg'
 import { Link, useLocation } from 'react-router';
+import { RxCross2 } from "react-icons/rx";
+
 
 
 function Navbar() {
@@ -47,9 +49,16 @@ function Navbar() {
                             </li>
                         ))}
                     </ul>
-                    <button className={`md:hidden block ${showDropdown ? 'bg-blue-100' : 'bg-transparent'} p-1.5 rounded-md`} onClick={handelDropdown}>
-                        <img className='size-5' src={menuIcon} />
-                    </button>
+                    {
+                        showDropdown ?
+                            <RxCross2
+                            className={`size-9 md:hidden block p-1.5 rounded-md`} 
+                            onClick={handelDropdown} />
+                            :
+                            <button className={`md:hidden block  p-1.5 rounded-md`} onClick={handelDropdown}>
+                                <img className='size-5' src={menuIcon} />
+                            </button>
+                    }
                 </div>
             </div>
             {
@@ -59,7 +68,9 @@ function Navbar() {
                             <Link
                                 to={link.path}
                                 className={
-                                    `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} ${location.pathname === link.path ? 'bg-blue-100' : 'bg-transparent'} py-2 px-2 rounded-lg hover:text-blue-700 font-primaryRegular w-full text-left`}
+                                    `${location.pathname === link.path ? 'text-blue-700' : 'text-black'} 
+                                    ${location.pathname === link.path ? 'bg-blue-100' : 'bg-transparent'} 
+                                    py-2 px-2 rounded-lg font-primaryRegular w-full text-left`}
                             >
                                 {link.name}
                             </Link>
