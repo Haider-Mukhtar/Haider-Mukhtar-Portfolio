@@ -14,7 +14,7 @@ function Footer1() {
 
     const links = [
         { name: 'Home', path: '/' },
-        // { name: 'About Me', path: '/about' },
+        // { name: 'About', path: '/about' },
         { name: 'Experience', path: '/myexperience' },
         { name: 'Works', path: '/myworks' },
         { name: 'Hire Me', path: '/contact' },
@@ -30,7 +30,7 @@ function Footer1() {
         else {
             const myEmail = "haidermukhtarch405@gmail.com";
 
-            const emailLink = `mailto:${myEmail}?subject=Hi there!&body=Hi Haider, how are you doing?&from=${email}`;
+            const emailLink = `mailto:${myEmail}?subject=Hi there!&body=Hi Haider, how are you doing?`;
             window.location.href = emailLink;
             setEmailError(false)
             setEmail('')

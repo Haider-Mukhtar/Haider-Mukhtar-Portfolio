@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router';
 
 function NewNavbar() {
 
-  const location = useLocation(); // Get the current location
+  const location = useLocation();
 
   const links = [
     { name: 'Home', path: '/' },
@@ -20,6 +20,7 @@ function NewNavbar() {
           links.map((link) => (
             <Link
               to={link.path}
+              onClick={window.scrollTo(0, 0)}
               className={
                 `${location.pathname === link.path ? 'text-white' : 'text-black'} 
               ${location.pathname === link.path ? 'bg-blue-500' : 'bg-transparent'}
