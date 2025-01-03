@@ -1,5 +1,5 @@
 import React from 'react'
-import { TypeAnimation } from 'react-type-animation'
+import SkillsTypeAnimation from './ui/skills-type-animation'
 import skills from '../lib/skills'
 
 function Skills() {
@@ -10,29 +10,7 @@ function Skills() {
                     My Works Skills
                 </h1>
                 <h2 className='text-3xl font-primarySemiBold mt-2 text-center text-blue-600'>
-                    <TypeAnimation
-                        sequence={[
-                            'HTML',
-                            1000,
-                            'CSS',
-                            1000,
-                            'Bootstrap',
-                            1000,
-                            'Tailwind CSS',
-                            1000,
-                            'SASS',
-                            1000,
-                            'JavaScript',
-                            1000,
-                            'React JS',
-                            1000,
-                            'React Native',
-                            1000,
-                        ]}
-                        wrapper="span"
-                        speed={50}
-                        repeat={Infinity}
-                    />
+                    <SkillsTypeAnimation />
                 </h2>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 mt-4 gap-4'>
                     {

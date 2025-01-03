@@ -1,9 +1,9 @@
 import React from 'react'
-import Footer1 from '@/components/Footer1'
-import LetsTalk from '@/components/LetsTalk'
-import Navbar from '@/components/Navbar'
-import NewExperienceCards from '@/components/NewExperienceCards'
-import Testimonials from '@/components/Testimonials'
+import Footer from '@/components/footer'
+import LetsTalk from '@/components/lets-talk'
+import Navbar from '@/components/navbar'
+import NewExperienceCards from '@/components/experience-cards'
+import Testimonials from '@/components/testimonials'
 
 
 function MyExperience() {
@@ -15,7 +15,7 @@ function MyExperience() {
             </div>
             <Testimonials />
             <LetsTalk />
-            <Footer1 />
+            <Footer />
         </>
     )
 }

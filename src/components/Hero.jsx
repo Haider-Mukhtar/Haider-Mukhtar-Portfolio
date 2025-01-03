@@ -4,7 +4,7 @@ import rightArrow from '../assets/img/icons/rightArrow.svg'
 import linkedin from '../assets/img/icons/linkedin.svg'
 import github from '../assets/img/icons/github.svg'
 import instagram from '../assets/img/icons/instagram.svg'
-import { TypeAnimation } from 'react-type-animation'
+import HeroTypeAnimation from './ui/hero-type-animation'
 import { Link } from 'react-router'
 
 function Hero() {
@@ -21,21 +21,7 @@ function Hero() {
             I'm Haider Mukhtar
           </div>
           <div className='text-3xl font-primarySemiBold font-semibold mt-2 text-center text-blue-600'>
-            <TypeAnimation
-              sequence={[
-                'Computer Engineer',
-                1000, 
-                'Front End Developer',
-                1000,
-                'React JS Developer',
-                1000,
-                'React Native Developer',
-                1000
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            <HeroTypeAnimation />
           </div>
           <div className='flex mt-10 gap-3 justify-center items-center'>
             <Link to='/contact' className='flex flex-row items-center bg-blue-500 hover:bg-blue-400 py-1 pl-3 pr-1 rounded-full hover:transition-transform hover:scale-105 drop-shadow-xl'>

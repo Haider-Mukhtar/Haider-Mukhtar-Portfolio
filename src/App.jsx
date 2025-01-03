@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router"
-import Contact from "./pages/Contact"
-import Home from "./pages/Home"
-import MyExperience from "./pages/MyExperience"
-import MyWorks from "./pages/MyWorks"
+import Contact from "./pages/contact"
+import Home from "./pages/home"
+import MyExperience from "./pages/experience"
+import MyWorks from "./pages/works"
 
 function App() {
 

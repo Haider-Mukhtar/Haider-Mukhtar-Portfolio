@@ -9,7 +9,7 @@ import myCV from '../assets/files/HaiderMukhtar_CV.pdf'
 import email from '../assets/img/icons/email.svg'
 import links from '../lib/nav-links'
 
-function Footer1() {
+function Footer() {
 
     const myEmail = "haidermukhtarch405@gmail.com";
 
@@ -93,4 +93,4 @@ function Footer1() {
     )
 }
 
-export default Footer1
+export default Footer
