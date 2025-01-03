@@ -45,6 +45,10 @@ function Hero() {
               href='https://github.com/Haider-Mukhtar' target="_blank" className='bg-blue-500 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl size-[41px] p-2.5'>
               <img className='size-full' src={github} />
             </a>
+            <button
+              className='bg-blue-500 rounded-full hover:bg-blue-400 hover:transition-transform hover:scale-110 animate-spin animate-once drop-shadow-xl size-[41px] p-2.5'>
+              M
+            </button>
           </div>
         </div>
       </div>
