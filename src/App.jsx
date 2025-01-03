@@ -1,18 +1,18 @@
-import './App.css'
-// import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home'
-// import Footer from './components/Footer/Footer'
-import Footer1 from './components/Footer/Footer1'
-import NewNavbar from './components/Navbar/NewNavbar'
+import { Route, Routes } from "react-router"
+import Contact from "./pages/Contact"
+import Home from "./pages/Home"
+import MyExperience from "./pages/MyExperience"
+import MyWorks from "./pages/MyWorks"
 
 function App() {
 
   return (
-    <>
-      <NewNavbar />
-      <Home />
-      <Footer1 />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/myexperience" element={<MyExperience />} />
+      <Route path="/myworks" element={<MyWorks />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   )
 }
 
