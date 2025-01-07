@@ -6,8 +6,13 @@ import {
   motion,
   useMotionValue,
   useSpring,
-  type SpringOptions,
 } from "motion/react";
+
+type SpringOptions = {
+  stiffness?: number;
+  damping?: number;
+  mass?: number;
+};
 
 const SPRING_CONFIG = { stiffness: 26.7, damping: 4.1, mass: 0.2 };
 
