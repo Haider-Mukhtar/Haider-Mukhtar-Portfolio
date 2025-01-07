@@ -17,7 +17,7 @@ const LetsTalk = () => {
         <div className="mt-10 flex items-center justify-center">
           <Magnetic
             intensity={0.5}
-            springOptions={springOptions}
+            // springOptions={springOptions}
             actionArea="global"
             range={200}
           >
