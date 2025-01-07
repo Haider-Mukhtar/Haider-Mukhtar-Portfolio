@@ -4,7 +4,7 @@ import circle from "../assets/img/circle.png";
 import { Magnetic } from "./ui/magnetic.tsx";
 
 const LetsTalk = () => {
-  const springOptions = { bounce: 0.2 };
+  // const springOptions = { bounce: 0.2 };
   return (
     <div className="flex justify-center bg-background py-20">
       <div className="w-11/12 lg:w-4/5 2xl:px-8">
