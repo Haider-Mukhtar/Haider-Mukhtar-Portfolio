@@ -5,10 +5,10 @@ const Skills = () => {
   return (
     <div className="bg-secbackground flex justify-center py-20">
       <div className="w-11/12 lg:w-4/5 2xl:px-8">
-        <h1 className="font-primaryBold text-heading text-center text-4xl drop-shadow-2xl sm:text-5xl">
+        <h1 className="font-primaryBold font-bold text-heading text-center text-4xl drop-shadow-2xl sm:text-5xl">
           My Works Skills
         </h1>
-        <h2 className="font-primarySemiBold text-subheading mt-2 text-center text-3xl">
+        <h2 className="font-primarySemiBold text-subheading font-semibold mt-2 text-center text-3xl">
           <SkillsTypeAnimation />
         </h2>
         <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
