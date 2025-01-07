@@ -1,5 +1,5 @@
-import Footer from "@/components/footer.tsx";
 import ExperienceCards from "@/components/experience-cards.tsx";
+import Footer from "@/components/footer.tsx";
 import Hero from "@/components/hero.tsx";
 import LetsTalk from "@/components/lets-talk.tsx";
 import Navbar from "@/components/navbar.tsx";

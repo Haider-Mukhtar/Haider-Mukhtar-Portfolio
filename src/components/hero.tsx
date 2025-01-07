@@ -12,7 +12,7 @@ const Hero = () => {
     <div className="flex justify-center bg-background py-20">
       <div className="w-11/12 space-y-4 lg:w-4/5 2xl:px-8">
         <div className="flex items-center justify-center">
-          <div className="motion-preset-pop motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate rounded-full bg-gradient-to-tr from-blue-500 via-blue-300 to-blue-500 shadow-blue-500 drop-shadow-2xl duration-700 hover:scale-100">
+          <div className="motion-preset-pop rounded-full bg-gradient-to-tr from-blue-500 via-blue-300 to-blue-500 shadow-blue-500 drop-shadow-2xl duration-700 motion-scale-in-[0.5] motion-translate-x-in-[-25%] motion-translate-y-in-[25%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-opacity-in-[0%] motion-duration-[0.35s] motion-duration-[0.53s]/scale motion-duration-[0.53s]/translate motion-duration-[0.63s]/rotate hover:scale-100">
             <img
               className="object-cver size-72 rounded-full sm:size-80 lg:size-96"
               src={myPic}
@@ -21,10 +21,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <div className="font-primaryBold text-heading text-center text-4xl font-bold sm:text-5xl">
+          <div className="font-primaryBold text-center text-4xl font-bold text-heading sm:text-5xl">
             I'm Haider Mukhtar
           </div>
-          <div className="font-primarySemiBold text-subheading mt-2 text-center text-3xl font-semibold">
+          <div className="font-primarySemiBold mt-2 text-center text-3xl font-semibold text-subheading">
             <HeroTypeAnimation />
           </div>
           <div className="mt-10 flex items-center justify-center gap-3">
@@ -42,21 +42,21 @@ const Hero = () => {
             <a
               href="https://www.instagram.com/haider_mukhtar_ch/"
               target="_blank"
-              className="animate-once size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl hover:scale-110 hover:bg-blue-400 hover:transition-transform"
+              className="size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl animate-once hover:scale-110 hover:bg-blue-400 hover:transition-transform"
             >
               <img className="size-full" src={instagram} />
             </a>
             <a
               href="https://www.linkedin.com/in/haider-mukhtar/"
               target="_blank"
-              className="animate-once size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl hover:scale-110 hover:bg-blue-400 hover:transition-transform"
+              className="size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl animate-once hover:scale-110 hover:bg-blue-400 hover:transition-transform"
             >
               <img className="size-full" src={linkedin} />
             </a>
             <a
               href="https://github.com/Haider-Mukhtar"
               target="_blank"
-              className="animate-once size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl hover:scale-110 hover:bg-blue-400 hover:transition-transform"
+              className="size-[41px] animate-spin rounded-full bg-blue-500 p-2.5 drop-shadow-xl animate-once hover:scale-110 hover:bg-blue-400 hover:transition-transform"
             >
               <img className="size-full" src={github} />
             </a>

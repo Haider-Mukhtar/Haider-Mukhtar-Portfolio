@@ -6,9 +6,9 @@ import testimonials from "../lib/testimonials.ts";
 
 const Testimonials = () => {
   return (
-    <div className="bg-secbackground flex justify-center py-20">
+    <div className="flex justify-center bg-secbackground py-20">
       <div className="w-11/12 lg:w-4/5 2xl:px-8">
-        <h1 className="font-primaryBold text-heading text-center text-4xl font-semibold sm:text-5xl">
+        <h1 className="font-primaryBold text-center text-4xl font-semibold text-heading sm:text-5xl">
           What Clients Say About Me
         </h1>
         <Marquee pauseOnHover autoFill>

@@ -2,11 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-import {
-  motion,
-  useMotionValue,
-  useSpring,
-} from "motion/react";
+import { motion, useMotionValue, useSpring } from "motion/react";
 
 type SpringOptions = {
   stiffness?: number;

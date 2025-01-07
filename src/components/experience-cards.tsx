@@ -6,7 +6,7 @@ const ExperienceCards = () => {
   return (
     <div className="flex justify-center bg-background py-20">
       <div className="w-11/12 space-y-6 lg:w-4/5 2xl:px-8">
-        <h1 className="font-primaryBold text-heading text-center text-4xl font-semibold sm:text-5xl">
+        <h1 className="font-primaryBold text-center text-4xl font-semibold text-heading sm:text-5xl">
           Work Experience
         </h1>
         <div className="grid grid-flow-row gap-4 sm:grid-cols-2 lg:grid-cols-3">

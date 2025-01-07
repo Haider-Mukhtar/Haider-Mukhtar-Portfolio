@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="flex justify-center bg-background py-20">
       <div className="w-11/12 lg:w-4/5 2xl:px-8">
-        <h1 className="font-primaryBold text-heading text-center text-4xl font-semibold sm:text-5xl">
+        <h1 className="font-primaryBold text-center text-4xl font-semibold text-heading sm:text-5xl">
           My Projects
         </h1>
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
