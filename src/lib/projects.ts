@@ -1,17 +1,18 @@
 import eventhubProject from "../assets/img/eventhubProject.png";
 import maxfitProject from "../assets/img/maxfitProject.png";
-import teslaProject from "../assets/img/teslaProject1.png";
+import tagextractor from "../assets/img/tagextractor.png";
 import todoProject from "../assets/img/todoProject.png";
 
 const projects = [
   {
     id: 1,
-    image: teslaProject,
-    name: "Tesla UI Clone",
+    image: tagextractor,
+    name: "Tag Extractor",
     category: "Web Development",
-    detail: "Tesla Website UI Clone using React JS and Tailwind CSS.",
-    github: "https://github.com/Haider-Mukhtar/Tesla-UI-Clone",
-    url: "https://tesla-uiclone.netlify.app/",
+    detail:
+      "Youtube Tag Extractor using Vite, React, TypeScript, Tailwind CSS.",
+    github: "https://github.com/Haider-Mukhtar/Tag-Extractor",
+    url: "https://tag-extractor.vercel.app/",
   },
   {
     id: 2,
