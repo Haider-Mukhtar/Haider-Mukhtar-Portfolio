@@ -1,7 +1,7 @@
 
 # Haider Mukhtar Portfolio
 
-A portfolio using React, TypeScript, and TailwindCSS.
+A portfolio using React, Vite, TypeScript, and TailwindCSS.
 
 ## Demo
 
