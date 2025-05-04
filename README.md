@@ -3,7 +3,7 @@
 
 A portfolio using React, Vite, TypeScript, and TailwindCSS.
 
-## Demo
+## Live Demo
 
 <a href="https://haidermukhtar.vercel.app/" target="_blank" title="Portfolio">💻 Live Demo</a>
 
