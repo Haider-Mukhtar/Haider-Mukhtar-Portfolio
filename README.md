@@ -5,7 +5,7 @@ A portfolio using React, Vite, TypeScript, and TailwindCSS.
 
 ## Live Demo
 
-<a href="https://haidermukhtar.vercel.app/" target="_blank" title="Portfolio">💻 Live Demo</a>
+<a href="https://haidermukhtarv1.vercel.app/" target="_blank" title="Portfolio">💻 Live Demo</a>
 
 
 ## Run Locally
